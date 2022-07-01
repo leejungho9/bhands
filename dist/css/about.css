@@ -1,0 +1,177 @@
+/*About*/
+.about {
+}
+.about_container {
+  width: 100%;
+  margin: auto;
+  margin-top: 65px;
+}
+.aboutImg {
+  background-image: url("../images/about_image1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.aboutbhands {
+  text-align: center;
+  margin-bottom: 100px;
+}
+.aboutbhandsTitle {
+  font-size: 35px;
+  color: #3e3a39;
+}
+.aboutbhands .aboutSubTitle {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 55px;
+  letter-spacing: -1px;
+  color: #3e3a39;
+}
+.aboutbhands .content {
+  font-size: 14px;
+  letter-spacing: -1px;
+  color: #3e3a39;
+  padding: 0 105px;
+  line-height: 2;
+}
+
+.historyArea {
+  background-color: #f6f6f6;
+  min-height: 600px;
+  padding: 100px 0;
+  margin-bottom: 1-0px;
+}
+.historyTitle {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.historyTitle h1 {
+  font-size: 35px;
+  margin: 0px;
+}
+.timeline {
+  position: relative;
+  width: 100%;
+  padding-top: 55px;
+  margin: auto;
+}
+.timeline p {
+  color: #3e3a39;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.timeline .timeline-container {
+  position: relative;
+  width: 100%;
+}
+
+.timeline .timeline-continue {
+  position: relative;
+  width: 100%;
+}
+.timeline .timeline-continue::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 560px;
+  top: 5px;
+  left: 50%;
+  margin-left: -1px;
+  background: #000;
+}
+.timeline .timeline-left,
+.timeline .timeline-right .timeline-date {
+  text-align: right;
+}
+
+.timeline .timeline-right,
+.timeline .timeline-left .timeline-date {
+  text-align: left;
+}
+.timeline .timeline-date {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 15px;
+}
+.timeline .timeline-date::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  background: #000;
+  border-radius: 15px;
+  z-index: 1;
+}
+.timeline .timeline-left .timeline-date::after {
+  left: -5px;
+}
+.timeline .timeline-right .timeline-date::after {
+  right: -5px;
+}
+
+.timeline .timeline-text {
+  position: relative;
+  width: calc(100% - 40px);
+  float: left;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 3px;
+}
+.timeline .timeline-text1 {
+  height: 160px;
+  margin-left: 15px;
+}
+.timeline .timeline-text2 {
+  height: 160px;
+  padding-right: 15px;
+}
+
+.timeline .timeline-text3 {
+  height: 214px;
+  margin-left: 15px;
+}
+
+.timeline .timeline-text4 {
+  height: 260px;
+  padding-right: 15px;
+}
+
+p {
+  color: #3e3a39;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+/**/
+.aboutButtom {
+  margin: 0 212px;
+  margin-top: 150px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.logo {
+  margin: auto;
+  margin-bottom: 20px;
+}
+.aboutButtom p {
+  margin-top: 10px;
+  font-size: 16px;
+  letter-spacing: -1.2px;
+}
+.licenseTitle {
+  color: #3e3a39;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.licenseLogo {
+  width: 860px;
+  height: 90px;
+  margin: auto;
+}

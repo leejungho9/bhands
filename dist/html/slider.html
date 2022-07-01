@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>비핸즈</title>
+
+    <!-- reset css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+   
+    <!--fontawesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--jQuery cdn -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+   
+
+    
+    <!--css 연결-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+
+    
+    <!-- Slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+
+  </head>
+  <body>
+    <!--header-->
+    <div class="bar"></div>
+      <header>
+        <div class="inner">
+          <a href="home.html" class="logo">
+            <img src="../images/logo.png" alt="로고" />
+          </a>
+          <div class="ham">
+            <img
+              onclick="showSidebar()"
+              src="../images/ham.png"
+              class="hamBtn"
+              alt="햄버거버튼"
+            ></img>
+          </div>
+
+          <div class="nav-menu">
+            <div class="bg" onclick="showSidebar()"></div>
+            <div onclick="showSidebar()">
+              <img src="../images/x.png" alt="close" class="menuCloseBtn"/>
+            </div>
+            <div class="categoryList">
+              <h2>
+                <a href="home.html"> HOME</a>
+              </h2>
+              <h2>
+                <a href="about.html">ABOUT</a>
+              </h2>
+              <h2 class="work-menu" onclick="showworkMenu();">
+                WORKS
+              </h2>
+              <ul class="work-menu-ul">
+                <li>
+                  <a
+                    href="artgoods.html"
+                    class="artgoods"
+                  >
+                    ART GOODS
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="calendar.html"
+                    class="a_calendar"
+                  >
+                    CALENDAR
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="diary.html"
+                    class="a_diary"
+                  >
+                    DIARY
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="package.html"
+                    class="a_package"
+                  >
+                    PACKAGE
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="card.html"
+                    class="a_card"
+                  >
+                    CARD
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="catalogue.html"
+                    class="a_catalogue"
+                  >
+                    CATALOGUE
+                  </a>
+                </li>
+              </ul>
+              <h2>
+                <a href="contact.html"> CONTACT</a>
+              </h2>
+              <h2>
+                <a href="artist.html"> ARTIST</a>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </header>
+
+      <!--body-->
+      <div class= "sliderArea">
+        <div class="image_container">
+            <div class="slide_container">
+                <div class="imageArea">
+                    <img
+                    src="../images/slider-image.jpg"
+                    alt="slider-Img"
+                    class="slideImg"
+                    />
+                </div>
+                <div class="imageArea">
+                    <img
+                    src="../images/calendar_03.png"
+                    alt="slider-Img"
+                    class="slideImg"
+                    />
+                </div>
+                <div class="imageArea">
+                    <img
+                    src="../images/calendar_04.png"
+                    alt="slider-Img"
+                    class="slideImg"
+                    />
+                </div>
+                <div class="imageArea">
+                    <img
+                    src="../images/slider-image.jpg"
+                    alt="slider-Img"
+                    class="slideImg"
+                    />
+                </div>
+                <div class="imageArea">
+                    <img
+                    src="../images/slider-image.jpg"
+                    alt="slider-Img"
+                    class="slideImg"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <!--footer-->
+      <footer>
+        <div class="inner">
+          <div class="menu1">
+            <div class="info1">
+              <img class="footerlogo" src="../images/footer logo.png" alt="로고" />
+              <p>©Bhands, All rights reserved. 대표자 : 박소연</p>
+            </div>
+            <div class="info2">
+              <p>Business Code : 141-81-34625</p>
+              <p>Address : 경기도 파주시 광인사길 9-7</p>
+              <p>Contact Code : 02 2279 9211(P), 02 796 7671(F)</p>
+            </div>
+          </div>
+  
+          <div class="menu2">
+            <a href="/" class="menua"> 회사소개 </a>
+            <a href="/" class="menua"> 개인정보취급방침 </a>
+            <a href="/" class="menua"> 제휴문의 </a>
+            <a href="/">
+              <img class="instalogo" src="../images/footer_insta.png" alt="로고" />
+            </a>
+          </div>
+        </div>
+      </footer>
+
+      
+      
+    <script src="../js/home.js"> </script>
+    <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-1.11.0.min.js"
+  ></script>
+
+    
+  <script>
+    $(function () {
+      $(".image_container").slick({
+        slide: "img",
+        dots: true,
+        fade: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      });
+    });
+  </script>
+
+
+  </body>
+</html>

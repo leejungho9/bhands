@@ -1,0 +1,102 @@
+.catalogue_section {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 1284px;
+}
+.catalogue_container {
+  width: 1150px;
+  position: relative;
+  margin: 0 67px;
+  box-sizing: border-box;
+  margin-top: 65px;
+}
+.topMenu {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.year span {
+  margin-right: 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.year_menu.active {
+  font-weight: bold;
+}
+.search {
+  border-radius: 15px;
+  border: 1px solid #595757;
+  width: 250px;
+  height: 30px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.search:focus {
+  outline: none;
+}
+.searchBtn {
+  top: 22px;
+  right: 10px;
+  border: none;
+  height: 20px;
+  position: absolute;
+  background-color: #fff;
+  cursor: pointer;
+}
+.searchImg {
+  height: 15px;
+}
+
+.inner {
+  display: grid;
+  grid-template-rows: repeat(2);
+  row-gap: 50px;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(369px, 3fr));
+}
+
+.catalogue_section_box {
+  box-sizing: border-box;
+}
+.catalogue_sectionImage {
+  width: 369px;
+  height: 440px;
+}
+.info {
+  width: 369px;
+  height: 40px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info span {
+  color: #595757;
+  font-size: 15px;
+  padding: 10px;
+}
+
+/*페이징처리*/
+.pageArea {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.pagination {
+  display: flex;
+}
+.page-item {
+  margin: 0 15px;
+}
+.page-item a {
+  color: #3e3a39;
+}
+.page-item a:active {
+  color: #898989;
+}

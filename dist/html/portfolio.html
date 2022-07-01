@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/portfolio.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+
+
+
+    <title>비핸즈</title>
+    <!--grid css-->
+
+  <link>
+  </head>
+  <body>
+    <!--header-->
+    <div class="bar"></div>
+      <header>
+        <div class="inner">
+          <a href="home.html" class="logo">
+            <img src="../images/logo.png" alt="로고" />
+          </a>
+          <div class="ham">
+            <img
+              onclick="showSidebar()"
+              src="../images/ham.png"
+              class="hamBtn"
+              alt="햄버거버튼"
+            ></img>
+          </div>
+
+          <div class="nav-menu">
+            <div class="bg" onclick="showSidebar()"></div>
+            <div onclick="showSidebar()">
+              <img src="../images/x.png" alt="close" class="menuCloseBtn"/>
+            </div>
+            <div class="categoryList">
+              <h2>
+                <a href="home.html"> HOME</a>
+              </h2>
+              <h2>
+                <a href="about.html">ABOUT</a>
+              </h2>
+              <h2 class="work-menu" onclick="showworkMenu();">
+                WORKS
+              </h2>
+              <ul class="work-menu-ul">
+                <li>
+                  <a
+                    href="artgoods.html"
+                    class="a_artgoods"
+                  >
+                    ART GOODS
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="calendar.html"
+                    class="a_calendar"
+                  >
+                    CALENDAR
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="diary.html"
+                    class="a_diary"
+                  >
+                    DIARY
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="package.html"
+                    class="a_package"
+                  >
+                    PACKAGE
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="card.html"
+                    class="a_card"
+                  >
+                    CARD
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="catalogue.html"
+                    class="a_catalogue"
+                  >
+                    CATALOGUE
+                  </a>
+                </li>
+              </ul>
+              <h2>
+                <a href="contact.html"> CONTACT</a>
+              </h2>
+              <h2>
+                <a href="artist.html"> ARTIST</a>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </header>
+
+      <!--body-->
+      <section class="portfolio">
+        <div class="portfolio_container">
+          <div class="portfolio_inner">
+            <a href="artgoods.html">
+              <div class="portfolio_box">
+                <div class="topbox">
+                  <div class="text">
+                    <h2 class="title">ART GOODS</h2>
+                    <p class="subTitle">
+                      기업, 금융, 갤러리, 아티스트와 협업을 통해 고객에게 일상의
+                      소중한 기록을 아름답게 표현합니다.
+                    </p>
+                  </div>
+                </div>
+                <img src="../images/image_01.png" class="midlebox">
+                <div class="bottombox">
+                  <div class="btn">VIEW MORE</div>
+                </div>
+              </div>
+            </a>
+  
+            <a href="calendar.html">
+                <div class="portfolio_box">
+                    <div class="topbox">
+                      <div class="text">
+                        <h2 class="title">CALENDAR</h2>
+                        <p class="subTitle">
+                          기업, 금융, 갤러리, 아티스트와 협업을 통해 고객에게 일상의
+                          소중한 기록을 아름답게 표현합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <img src="../images/image_01.png" class="midlebox">
+                    <div class="bottombox">
+                      <div class="btn">VIEW MORE</div>
+                    </div>
+                  </div>
+            </a>
+
+            <a href="/diary.html">
+              <div class="portfolio_box">
+                <div class="topbox">
+                  <div class="text">
+                    <h2 class="title">DIARY</h2>
+                    <p class="subTitle">
+                      기업, 금융, 갤러리, 아티스트와 협업을 통해 고객에게 일상의
+                      소중한 기록을 아름답게 표현합니다.
+                    </p>
+                  </div>
+                </div>
+                <img src="../images/image_01.png" class="midlebox">
+                <div class="bottombox">
+                  <div class="btn">VIEW MORE</div>
+                </div>
+              </div>
+            </a>
+  
+            <a href="package.html">
+                <div class="portfolio_box">
+                    <div class="topbox">
+                      <div class="text">
+                        <h2 class="title">>PACKAGE</h2>
+                        <p class="subTitle">
+                          기업, 금융, 갤러리, 아티스트와 협업을 통해 고객에게 일상의
+                          소중한 기록을 아름답게 표현합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <img src="../images/image_01.png" class="midlebox">
+                    <div class="bottombox">
+                      <div class="btn">VIEW MORE</div>
+                    </div>
+                  </div>
+            </a>
+  
+            <a href="card.html">
+                <div class="portfolio_box">
+                    <div class="topbox">
+                      <div class="text">
+                        <h2 class="title">CARD</h2>
+                        <p class="subTitle">
+                          기업, 금융, 갤러리, 아티스트와 협업을 통해 고객에게 일상의
+                          소중한 기록을 아름답게 표현합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <img src="../images/image_01.png" class="midlebox">
+                    <div class="bottombox">
+                      <div class="btn">VIEW MORE</div>
+                    </div>
+                  </div>
+            </a>
+  
+            <a href="catalogue.html">
+                <div class="portfolio_box">
+                    <div class="topbox">
+                      <div class="text">
+                        <h2 class="title">CATALOGUE</h2>
+                        <p class="subTitle">
+                          기업, 금융, 갤러리, 아티스트와 협업을 통해 고객에게 일상의
+                          소중한 기록을 아름답게 표현합니다.
+                        </p>
+                      </div>
+                    </div>
+                    <img src="../images/image_01.png" class="midlebox">
+                    <div class="bottombox">
+                      <div class="btn">VIEW MORE</div>
+                    </div>
+                  </div>
+            </a>
+          </div>
+  
+          <div class="text2">
+            <span>ART CREATION GROUP</span>
+          </div>
+        </div>
+      </section>
+
+
+
+      <!--footer-->
+      <footer>
+        <div class="inner">
+          <div class="menu1">
+            <div class="info1">
+              <img class="footerlogo" src="../images/footer logo.png" alt="로고" />
+              <p>©Bhands, All rights reserved. 대표자 : 박소연</p>
+            </div>
+            <div class="info2">
+              <p>Business Code : 141-81-34625</p>
+              <p>Address : 경기도 파주시 광인사길 9-7</p>
+              <p>Contact Code : 02 2279 9211(P), 02 796 7671(F)</p>
+            </div>
+          </div>
+  
+          <div class="menu2">
+            <a href="/" class="menua"> 회사소개 </a>
+            <a href="/" class="menua"> 개인정보취급방침 </a>
+            <a href="/" class="menua"> 제휴문의 </a>
+            <a href="/">
+              <img class="instalogo" src="../images/footer_insta.png" alt="로고" />
+            </a>
+          </div>
+        </div>
+      </footer>
+
+    
+      <script src="../js/portfolio.js"> </script>
+      <script src="../js/home.js"> </script>
+      
+ 
+
+  </body>
+</html>
