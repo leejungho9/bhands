@@ -275,7 +275,7 @@ h2.work-menu.active {
   height: 340px;
   border: 1px solid #b5b5b6;
   margin-bottom: 25px;
-  background-image: url("./images/banner_01.jpg");
+  background-image: url("../images/banner_01.jpg");
   background-size: cover;
   position: relative;
 }
@@ -285,7 +285,7 @@ h2.work-menu.active {
   height: 340px;
   border: 1px solid #b5b5b6;
   margin-bottom: 25px;
-  background-image: url("./images/banner_02.jpg");
+  background-image: url("../images/banner_02.jpg");
   background-size: cover;
   position: relative;
 }
@@ -295,7 +295,7 @@ h2.work-menu.active {
   height: 340px;
   border: 1px solid #b5b5b6;
   margin-bottom: 25px;
-  background-image: url("./images/banner_03.jpg");
+  background-image: url("../images/banner_03.jpg");
   background-size: cover;
   position: relative;
 }
@@ -305,7 +305,7 @@ h2.work-menu.active {
   height: 340px;
   border: 1px solid #b5b5b6;
   margin-bottom: 25px;
-  background-image: url("./images/banner_04.jpg");
+  background-image: url("../images/banner_04.jpg");
   background-size: cover;
   position: relative;
 }
