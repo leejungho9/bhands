@@ -330,15 +330,6 @@ h2.work-menu.active {
 .aboutBtn {
   margin-top: 44px;
 }
-/* 
-  @media (max-width: 768px) {
-    .mainMenu {
-      width: 768px;
-    }
-    section {
-      width: 768px;
-    }
-  } */
 
 /*footer*/
 
@@ -400,38 +391,54 @@ footer .inner .menu2 .menua::before {
   color: #fff;
   margin-right: 10px;
 }
-/* footer 반응형 */
+/************************* footer 반응형 *****************************************/
+
 @media only screen and (max-width: 767px) {
+  footer {
+    height: 190px;
+  }
   footer .inner {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 100px 0;
+    padding-top: 25px;
+    padding-left: 18px;
+    padding-bottom: 22px;
+    background-color: black;
   }
-  .footerlogo {
-    width: 89px;
-    height: 14px;
+  footer .footerlogo {
+    width: 80px;
+    height: 13px;
+    margin-bottom: 12px;
+  }
+
+  footer p {
+    font-size: 8px;
+  }
+  footer .copyright {
+    margin-bottom: 30px;
   }
   footer .menu1 {
     display: inline;
+    margin-bottom: 40px;
   }
-  footer .menu1 .info1 {
-    margin-right: 0;
+
+  footer .menu1 .info2 {
+    line-height: 0.5;
   }
   footer .inner .menu2 {
+    left: 10px;
     display: flex;
     bottom: 20px;
-    position: absolute;
-    align-items: center;
-    height: 67px;
-    right: auto;
-    text-align: center;
+    height: 10px;
+  }
+  footer .inner .menu2 .menua {
+    font-size: 8px;
   }
   footer .instalogo {
-    width: 46px;
-    height: 46px;
+    position: absolute;
+    right: 50px;
+    bottom: 0px;
+    width: 24px;
+    height: 24px;
     display: inline;
-
-    margin-left: 30px;
   }
 }

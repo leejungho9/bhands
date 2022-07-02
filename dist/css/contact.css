@@ -39,7 +39,7 @@
 }
 
 .titleH2,
-.cotentH2 {
+.contentH2 {
   letter-spacing: 17px;
   font-weight: bold;
   font-size: 15px;
@@ -200,11 +200,11 @@ textarea::placeholder {
   }
 
   .titleH2,
-  .cotentH2 {
+  .contentH2 {
     font-size: 12px;
     letter-spacing: 12px;
   }
-  .cotentH2 {
+  .contentH2 {
     margin-top: 5px;
   }
   .emainH2,
@@ -339,3 +339,4 @@ textarea::placeholder {
     background-repeat: no-repeat;
   }
 }
+/***************************footer 반응형************************************/
