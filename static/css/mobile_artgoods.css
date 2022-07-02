@@ -44,13 +44,13 @@
   width: 100%;
 }
 .artgoods_title {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
   margin: 0 18px;
   margin-bottom: 18px;
 }
 .artgoods_subtitle {
-  font-size: 10px;
+  font-size: 12px;
   color: #3e3a39;
   letter-spacing: -1px;
   line-height: 1.5;
@@ -58,8 +58,11 @@
   margin-bottom: 30px;
 }
 .shopImg {
-  width: 360px;
-  height: 360px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  /* width: 360px;
+  height: 360px; */
   margin: auto;
 }
 /* .artgoods_box {
