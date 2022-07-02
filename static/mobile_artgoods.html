@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/mobile_artgoods.css" />
+    <link rel="stylesheet" href="../css/mobile-slick-theme.css" />
+    <link rel="stylesheet" href="../css/mobile-slick.css" /> 
+
+
+
+    <title>비핸즈</title>
+    <!--grid css-->
+
+  <link>
+  </head>
+  <body>
+    <!--header-->
+    <div class="bar"></div>
+      <header>
+        <div class="inner">
+          <a href="home.html" class="logo">
+            <img src="../images/logo.png" alt="로고" />
+          </a>
+          <div class="ham">
+            <img
+              onclick="showSidebar()"
+              src="../images/ham.png"
+              class="hamBtn"
+              alt="햄버거버튼"
+            ></img>
+          </div>
+
+          <div class="nav-menu">
+            <div class="bg" onclick="showSidebar()"></div>
+            <div onclick="showSidebar()">
+              <img src="../images/x.png" alt="close" class="menuCloseBtn"/>
+            </div>
+            <div class="categoryList">
+              <h2>
+                <a href="home.html"> HOME</a>
+              </h2>
+              <h2>
+                <a href="about.html">ABOUT</a>
+              </h2>
+              <h2 class="work-menu" onclick="showworkMenu();">
+                WORKS
+              </h2>
+              <ul class="work-menu-ul">
+                <li>
+                  <a
+                    href="artgoods.html"
+                    class="a_artgoods"
+                  >
+                    ART GOODS
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="calendar.html"
+                    class="a_calendar"
+                  >
+                    CALENDAR
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="diary.html"
+                    class="a_diary"
+                  >
+                    DIARY
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="package.html"
+                    class="a_package"
+                  >
+                    PACKAGE
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="card.html"
+                    class="a_card"
+                  >
+                    CARD
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="catalogue.html"
+                    class="a_catalogue"
+                  >
+                    CATALOGUE
+                  </a>
+                </li>
+              </ul>
+              <h2>
+                <a href="contact.html"> CONTACT</a>
+              </h2>
+              <h2>
+                <a href="artist.html"> ARTIST</a>
+              </h2>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </header>
+
+      <!--body-->
+
+      <div class="artgoods_mainMenu">
+        <div class="artgoods_container">
+          <section class="menubox">
+            <div class="slider-wrap">
+                <div class="artgoods_box">
+                    <div class="artgoods_info">
+                        <h2 class="artgoods_title">그림닷컴</h2>
+                        <p class="artgoods_subtitle">
+                          미국, 영국 등 10여개의 국가에서 수입된 아트프린트뿐 아니라
+                          국내외 유명 아티스트의 판화, 한국 전통민화에 이르기까지
+                          3만여점의 그림을 감상하고 구입할 수 있는 온라인 그림
+                          쇼핑몰입니다.
+                        </p>
+                    </div>
+                    <img class="shopImg" src="../images/shop_image.jpg" alt="그림닷컴" />
+                    <a href="https://gurim.com/" class="mobile_btn"> VIEW MORE </a>
+                </div>
+                <div class="artgoods_box">
+                    <div class="artgoods_info">
+                        <h2 class="artgoods_title">그림닷컴</h2>
+                        <p class="artgoods_subtitle">
+                          미국, 영국 등 10여개의 국가에서 수입된 아트프린트뿐 아니라
+                          국내외 유명 아티스트의 판화, 한국 전통민화에 이르기까지
+                          3만여점의 그림을 감상하고 구입할 수 있는 온라인 그림
+                          쇼핑몰입니다.
+                        </p>
+                    </div>
+                    <img class="shopImg" src="../images/shop_image.jpg" alt="그림닷컴" />
+                    <a href="https://gurim.com/" class="btn moreBtn"> VIEW MORE </a>
+                </div>
+                <div class="artgoods_box">
+                    <div class="artgoods_info">
+                        <h2 class="artgoods_title">그림닷컴</h2>
+                        <p class="artgoods_subtitle">
+                          미국, 영국 등 10여개의 국가에서 수입된 아트프린트뿐 아니라
+                          국내외 유명 아티스트의 판화, 한국 전통민화에 이르기까지
+                          3만여점의 그림을 감상하고 구입할 수 있는 온라인 그림
+                          쇼핑몰입니다.
+                        </p>
+                    </div>
+                    <img class="shopImg" src="../images/shop_image.jpg" alt="그림닷컴" />
+                    <a href="https://gurim.com/" class="mobile_btn"> VIEW MORE </a>
+                </div>
+                <div class="artgoods_box">
+                    <div class="artgoods_info">
+                        <h2 class="artgoods_title">그림닷컴</h2>
+                        <p class="artgoods_subtitle">
+                          미국, 영국 등 10여개의 국가에서 수입된 아트프린트뿐 아니라
+                          국내외 유명 아티스트의 판화, 한국 전통민화에 이르기까지
+                          3만여점의 그림을 감상하고 구입할 수 있는 온라인 그림
+                          쇼핑몰입니다.
+                        </p>
+                    </div>
+                    <img class="shopImg" src="../images/shop_image.jpg" alt="그림닷컴" />
+                    <a href="https://gurim.com/" class="mobile_btn"> VIEW MORE </a>
+                </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+
+
+      <!--footer-->
+      <footer>
+        <div class="inner">
+          <div class="menu1">
+            <div class="info1">
+              <img class="footerlogo" src="../images/footer logo.png" alt="로고" />
+              <p>©Bhands, All rights reserved. 대표자 : 박소연</p>
+            </div>
+            <div class="info2">
+              <p>Business Code : 141-81-34625</p>
+              <p>Address : 경기도 파주시 광인사길 9-7</p>
+              <p>Contact Code : 02 2279 9211(P), 02 796 7671(F)</p>
+            </div>
+          </div>
+  
+          <div class="menu2">
+            <a href="/" class="menua"> 회사소개 </a>
+            <a href="/" class="menua"> 개인정보취급방침 </a>
+            <a href="/" class="menua"> 제휴문의 </a>
+            <a href="/">
+              <img class="instalogo" src="../images/footer_insta.png" alt="로고" />
+            </a>
+          </div>
+        </div>
+      </footer>
+
+    
+      <script src="../js/home.js"> </script>
+      <script src="../js/artgoods.js"> </script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+      <script>
+    
+    
+    $(function(){
+        $(".slider-wrap").slick({
+            slide: "div",
+            fade: true,
+            dots: true,
+            arrows: false,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            
+
+          });
+    })
+      </script>
+
+  </body>
+</html>
