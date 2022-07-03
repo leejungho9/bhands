@@ -79,9 +79,7 @@
 .moreBtn {
   margin-top: 45px;
 }
-.slider-wrap {
-  display: ;
-}
+
 /*************************artgoods 반응형**********************/
 @media only screen and (max-width: 767px) {
   .artgoods_container {
