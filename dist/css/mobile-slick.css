@@ -91,7 +91,7 @@
 .slick-slide img {
   display: block;
   margin: auto;
-  width: 360px;
+  width: 100%;
 }
 .slick-slide.slick-loading img {
   display: none;

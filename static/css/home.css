@@ -404,6 +404,7 @@ footer .inner .menu2 .menua::before {
     padding-left: 18px;
     padding-bottom: 22px;
     background-color: black;
+    box-sizing: border-box;
   }
   footer .footerlogo {
     width: 80px;

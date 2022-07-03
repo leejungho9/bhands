@@ -7,13 +7,16 @@
     <!-- reset css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/artgoods.css" />
     <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/artgoods.css" />
 
+    <link rel="stylesheet" href="../css/mobile-slick-theme.css" />
+    <link rel="stylesheet" href="../css/mobile-slick.css" /> 
 
-
+        
+    <!--jQuery cdn -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <title>비핸즈</title>
-    <!--grid css-->
 
   <link>
   </head>
@@ -114,96 +117,106 @@
       <!--body-->
 
       <div class="artgoods_mainMenu">
-        <div class="artgoods_container">
-          <section class="menubox">
-            <div class="artgoods_box">
-              <h2 class="artgoods_title">그림닷컴</h2>
-              <p class="artgoods_subtitle">
-                미국, 영국 등 10여개의 국가에서 수입된 아트프린트뿐 아니라
-                국내외 유명 아티스트의 판화, 한국 전통민화에 이르기까지
-                3만여점의 그림을 감상하고 구입할 수 있는 온라인 그림
-                쇼핑몰입니다.
-              </p>
-              <a href="https://gurim.com/" class="btn moreBtn">
-                VIEW MORE
-              </a>
-            </div>
-            <div class="box2">
-              <div class="image1">
-                <img
-                  class="img1"
-                  src="../images/shop_image.jpg"
-                  alt="그림닷컴"
-                />
-              </div>
-              <div class="image2">
-                <img
-                  class="img1"
-                  src="../images/shop_image.jpg"
-                  alt="그림닷컴"
-                />
-              </div>
-            </div>
-          </section>
+        <div class="artgoods_container ">
+          <section class="artgoods_section">
+            <div class="slider-wrap">
     
-          <section class="menubox">
-            <div class="artgoods_box">
-              <h2 class="artgoods_title">아트앤에디션</h2>
-              <p class="artgoods_subtitle">
-                아트앤에디션은 국내외에서 활발하게 활동하고 있는 작가들의 그림을
-                합리적인 가격에 구입 할 수 있는 에디션아트 전문 온라인
-                갤러리입니다.
-              </p>
-            <a href="https://artnedition.com/" class="btn moreBtn">
-              VIEW MORE
-            </a>
-            </div>
-            <div class="box2">
-              <div class="image1">
-                <img
-                  class="img1"
-                  src="../images/shop_image.jpg"
-                  alt="아트앤에디션"
-                />
-              </div>
-              <div class="image2">
-                <img
-                  class="img1"
-                  src="../images/shop_image.jpg"
-                  alt="아트앤에디션"
-                />
-              </div>
-            </div>
-          </section>
-    
-          <section class="menubox">
-            <div class="artgoods_box">
-              <h2 class="artgoods_title">바른손그리팅스</h2>
-              <p class="artgoods_subtitle">
-                미국, 영국 등 10여개의 국가에서 수입된 아트프린트뿐 아니라
-                국내외 유명 아티스트의 판화, 한국 전통민화에 이르기까지
-                3만여점의 그림을 감상하고 구입할 수 있는 온라인 그림
-                쇼핑몰입니다.
-              </p>
-            <a href="https://artnedition.com/" class="btn moreBtn">
-              VIEW MORE
-            </a>
-            </div>
-            <div class="box2">
-              <div class="image1">
-                <img
-                  class="img1"
-                  src="../images/shop_image.jpg"
-                  alt="바른손그리팅스"
-                />
-              </div>
-              <div class="image2">
-                <img
-                  class="img1"
-                  src="../images/shop_image.jpg"
-                  alt="바른손그리팅스"
-                />
-              </div>
+                   <div class="artgoods_box">
+                      <div class="artgoods_info">
+                        <h2 class="artgoods_title">그림닷컴</h2>
+                        <p class="artgoods_subtitle">
+                          미국, 영국 등 10여개의 국가에서 수입된 아트프린트뿐 아니라
+                          국내외 유명 아티스트의 판화, 한국 전통민화에 이르기까지
+                          3만여점의 그림을 감상하고 구입할 수 있는 온라인 그림
+                          쇼핑몰입니다.
+                        </p>
+                      </div>
+                      <div class="image_box">
+                        <div class="shopImg1">
+                          <img
+                            class="shopImg"
+                            src="../images/shop_image.jpg"
+                            alt="그림닷컴"
+                          />
+                        </div>
+                        <div class="shopImg2">
+                          <img
+                            class="shopImg"
+                            src="../images/shop_image.jpg"
+                            alt="그림닷컴"
+                          />
+                        </div>
+                      </div>
+                      <a href="https://gurim.com/" class="btn mobile_btn">
+                        VIEW MORE
+                      </a>
+                   </div>
+
+                   <div class="artgoods_box">
+                    <div class="artgoods_info">
+                      <h2 class="artgoods_title">그림닷컴</h2>
+                      <p class="artgoods_subtitle">
+                        미국, 영국 등 10여개의 국가에서 수입된 아트프린트뿐 아니라
+                        국내외 유명 아티스트의 판화, 한국 전통민화에 이르기까지
+                        3만여점의 그림을 감상하고 구입할 수 있는 온라인 그림
+                        쇼핑몰입니다.
+                      </p>
+                    </div>
+                    <div class="image_box">
+                      <div class="shopImg1">
+                        <img
+                          class="shopImg"
+                          src="../images/shop_image.jpg"
+                          alt="그림닷컴"
+                        />
+                      </div>
+                      <div class="shopImg2">
+                        <img
+                          class="shopImg"
+                          src="../images/shop_image.jpg"
+                          alt="그림닷컴"
+                        />
+                      </div>
+                    </div>
+                    <a href="https://gurim.com/" class="btn mobile_btn">
+                      VIEW MORE
+                    </a>
+                 </div>
+
+                 <div class="artgoods_box">
+                  <div class="artgoods_info">
+                    <h2 class="artgoods_title">그림닷컴</h2>
+                    <p class="artgoods_subtitle">
+                      미국, 영국 등 10여개의 국가에서 수입된 아트프린트뿐 아니라
+                      국내외 유명 아티스트의 판화, 한국 전통민화에 이르기까지
+                      3만여점의 그림을 감상하고 구입할 수 있는 온라인 그림
+                      쇼핑몰입니다.
+                    </p>
+                  </div>
+                  <div class="image_box">
+                    <div class="shopImg1">
+                      <img
+                        class="shopImg"
+                        src="../images/shop_image.jpg"
+                        alt="그림닷컴"
+                      />
+                    </div>
+                    <div class="shopImg2">
+                      <img
+                        class="shopImg"
+                        src="../images/shop_image.jpg"
+                        alt="그림닷컴"
+                      />
+                    </div>
+                  </div>
+                  <a href="https://gurim.com/" class="btn mobile_btn">
+                    VIEW MORE
+                  </a>
+               </div>
+        
+
+
+  
             </div>
           </section>
         </div>
@@ -240,8 +253,35 @@
     
       <script src="../js/home.js"> </script>
       <script src="../js/artgoods.js"> </script>
-      
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script>
+    
+    
+        sliderEl = $(".slider-wrap")
+
+          let slickOptions = {
+                slide: "div",
+                fade: true,
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              
+    
+          };
+
+        $(window).on('load resize', function() { 		
+            if($(window).width() < 767) { 			
+              sliderEl.not('.slick-initialized').slick(slickOptions); 		
+            }else{ 			
+              sliderEl.slick('unslick');
+            } 
+        });
  
+          </script>
 
   </body>
 </html>
