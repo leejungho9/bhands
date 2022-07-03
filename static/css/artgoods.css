@@ -91,7 +91,7 @@
   .artgoods_box {
     padding: 0;
     margin: 0;
-    background-color: #fff;
+    background-color: transparent;
     box-sizing: border-box;
   }
   .artgoods_section {
