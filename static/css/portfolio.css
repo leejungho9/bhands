@@ -113,7 +113,7 @@ a {
     box-sizing: border-box;
   }
   .topbox {
-    width: 200px;
+    width: 175px;
     height: 47px;
   }
   .text {
@@ -133,11 +133,11 @@ a {
     display: none;
   }
   .midlebox {
-    width: 200px;
+    width: 175px;
     height: auto;
   }
   .bottombox {
-    width: 200px;
+    width: 175px;
     height: 47px;
   }
 
