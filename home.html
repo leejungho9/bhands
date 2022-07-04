@@ -21,6 +21,9 @@
     <!--css 연결 -->
     <link rel="stylesheet" href="../css/home.css" />
 
+    <!--mobile slick 연결-->
+    <link rel="stylesheet" href="../css/mobile-slick-theme.css" />
+    <link rel="stylesheet" href="../css/mobile-slick.css" /> 
 
   <link>
   </head>
@@ -120,34 +123,55 @@
 
       <!--body-->
       <div class="mainMenu">
-        <div class="container">
-          <section class="about_menu">
-            <div class="box">
-              <h2 class="title">About</h2>
-              <p class="subtitle">비핸즈 연혁, 시설, 소개</p>
-              <a href="about.html" class="btn aboutBtn"> VIEW MORE </a>
+        <div class="main_container">
+          <section class="main_content">
+            <div class="slider-wrap">   
+  
+              <div class="about_menu">
+                <div class="backgroud_image1">
+                  <div class="box">
+                    <h2 class="title">About</h2>
+                    <p class="subtitle">비핸즈 연혁, 시설, 소개</p>
+                  </div>
+                </div>
+                <a href="about.html" class="portfolio_btn"> VIEW MORE </a>
+              </div>
+  
+  
+              <div class="portfolio_menu">
+                <div class="backgroud_image2">
+                  <div class="box">
+                    <h2 class="title">Portfolio</h2>
+                    <p class="subtitle">비핸즈의 제작 제품 포트폴리오</p>
+                  </div>
+                </div>
+                <a href="portfolio.html" class="portfolio_btn"> VIEW MORE </a>
+              </div>
+  
+  
+              <div class="contact_menu">
+                <div class="backgroud_image3">
+                  <div class="box">
+                    <h2 class="title">Contact</h2>
+                    <p class="subtitle">비핸즈에 대한 문의 및 연락</p>
+                  </div>
+                </div>
+                <a href="contact.html" class="portfolio_btn"> VIEW MORE </a>
+              </div>
+  
+  
+              <div class="artist_menu">
+                <div class="backgroud_image4">
+                  <div class="box">
+                    <h2 class="title">Artist</h2>
+                    <p class="subtitle">비핸즈와 작업한 아티스트</p>
+                  </div>
+                </div>
+                <a href="artist.html" class="portfolio_btn"> VIEW MORE </a>
+              </div>
+
             </div>
-          </section>
-          <section class="portfolio_menu">
-            <div class="box">
-              <h2 class="title">Portfolio</h2>
-              <p class="subtitle">비핸즈의 제작 제품 포트폴리오</p>
-              <a href="portfolio.html" class="btn aboutBtn"> VIEW MORE </a>
-            </div>
-          </section>
-          <section class="contact_menu">
-            <div class="box">
-              <h2 class="title">Contact</h2>
-              <p class="subtitle">비핸즈에 대한 문의 및 연락</p>
-              <a href="contact.html" class="btn aboutBtn"> VIEW MORE </a>
-            </div>
-          </section>
-          <section class="artist_menu">
-            <div class="box">
-              <h2 class="title">Artist</h2>
-              <p class="subtitle">비핸즈와 작업한 아티스트</p>
-              <a href="artist.html" class="btn aboutBtn"> VIEW MORE </a>
-            </div>
+
           </section>
         </div>
       </div>
@@ -182,7 +206,10 @@
       </footer>
 
     
+
       <script src="../js/home.js"> </script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
       
  
 

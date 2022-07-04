@@ -1,8 +1,21 @@
-let detailMenuEl = document.querySelectorAll(".detialMenu");
-console.log(detailMenuEl);
+/* slick js*/
+sliderEl = $(".slider-wrap");
 
-for (var i = 0; i < detailMenuEl.length; i++) {
-  detailMenuEl[i].addEventListener("click", function () {
-    console.log("클릭");
-  });
-}
+let slickOptions = {
+  slide: "div",
+  fade: true,
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
+
+$(window).on("load resize", function () {
+  if ($(window).width() < 767) {
+    sliderEl.not(".slick-initialized").slick(slickOptions);
+  } else {
+    sliderEl.slick("unslick");
+  }
+});

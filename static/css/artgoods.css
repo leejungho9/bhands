@@ -97,7 +97,6 @@
   .artgoods_section {
     margin-top: 30px;
     width: 100%;
-    margin-bottom: 25px;
     position: relative;
   }
   .artgoods_info {
@@ -136,25 +135,18 @@
   }
 
   .mobile_btn {
-    /* position: absolute; */
     width: 120px;
     height: 28px;
     border-radius: 14px;
     font-size: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #3e3a39;
     border: 1px solid #3e3a39;
     cursor: pointer;
     box-sizing: border-box;
     text-align: center;
-    right: 0;
-    left: 0;
-    bottom: -100px;
     margin: auto;
-    margin-top: 55px;
-    margin-bottom: 25px;
+    margin-top: 60px;
+    margin-bottom: 30px;
   }
   .shopImg2 {
     display: none;
