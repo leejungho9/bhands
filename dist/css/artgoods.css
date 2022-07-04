@@ -79,9 +79,7 @@
 .moreBtn {
   margin-top: 45px;
 }
-.slider-wrap {
-  display: ;
-}
+
 /*************************artgoods 반응형**********************/
 @media only screen and (max-width: 767px) {
   .artgoods_container {
@@ -93,7 +91,7 @@
   .artgoods_box {
     padding: 0;
     margin: 0;
-    background-color: #fff;
+    background-color: transparent;
     box-sizing: border-box;
   }
   .artgoods_section {
@@ -116,6 +114,7 @@
   }
   .artgoods_subtitle {
     font-size: 12px;
+    height: 54px;
     color: #3e3a39;
     letter-spacing: -1px;
     line-height: 1.5;

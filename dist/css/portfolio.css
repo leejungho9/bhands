@@ -6,6 +6,9 @@ a {
   display: flex;
   justify-content: center;
 }
+.mobile_title {
+  display: none;
+}
 .portfolio_container {
   width: 1150px;
   position: relative;
@@ -88,4 +91,47 @@ a {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+
+/************************* footer 반응형 *****************************************/
+
+@media only screen and (max-width: 767px) {
+  .portfolio {
+    display: block;
+  }
+  .portfolio_container {
+    width: 100%;
+    margin: 0;
+  }
+  .mobile_title {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    padding-top: 30px;
+    padding-left: 18px;
+    padding-bottom: 18px;
+  }
+  .topbox {
+    width: 175px;
+  }
+  .topbox .subTitle {
+    display: none;
+  }
+  .midlebox {
+    width: 175px;
+  }
+  .midlebox img {
+    width: 175px;
+    height: auto;
+  }
+  .bottombox {
+    width: 175px;
+  }
+
+  .portfolio_inner {
+    display: grid;
+    row-gap: 50px;
+    column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

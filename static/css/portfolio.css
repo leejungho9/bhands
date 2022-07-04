@@ -6,6 +6,9 @@ a {
   display: flex;
   justify-content: center;
 }
+.mobile_title {
+  display: none;
+}
 .portfolio_container {
   width: 1150px;
   position: relative;
@@ -35,11 +38,11 @@ a {
   top: 50px;
   left: 45px;
 }
-.topbox .title {
+.topbox .portfolio_title {
   font-size: 30px;
   margin-bottom: 20px;
 }
-.topbox .subTitle {
+.topbox .portfolio_subtitle {
   width: 279px;
   font-size: 14px;
   line-height: 1.5;
@@ -55,27 +58,25 @@ a {
   background-color: #f6f6f6;
 }
 
-.btn {
+.portfolio_btn {
   position: absolute;
   top: 38px;
   bottom: 67px;
   right: 0;
   left: 0;
   margin: auto;
-  width: 170px;
-  height: 35px;
-  border-radius: 16px;
-  font-size: 15px;
-  display: block;
-  color: #3e3a39;
-  border: 1px solid #3e3a39;
-  cursor: pointer;
-  padding: 7px;
-  box-sizing: border-box;
-  text-align: center;
+  width: 140px;
+  height: 28px;
+  border-radius: 14px;
+  font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #3e3a39;
+  border: 1px solid #3e3a39;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .text2 {
@@ -88,4 +89,84 @@ a {
   text-align: center;
   justify-content: center;
   align-items: center;
+}
+.mobile_btn {
+  display: none;
+}
+
+/************************* footer 반응형 *****************************************/
+
+@media only screen and (max-width: 767px) {
+  .portfolio {
+    display: block;
+  }
+  .portfolio_container {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .mobile_title {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    padding-left: 18px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+  }
+  .topbox {
+    width: 200px;
+    height: 47px;
+  }
+  .text {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+  .text2 {
+    display: none;
+  }
+  .topbox .portfolio_title {
+    font-size: 12px;
+  }
+  .topbox .portfolio_subtitle {
+    display: none;
+  }
+  .midlebox {
+    width: 200px;
+    height: auto;
+  }
+  .bottombox {
+    width: 200px;
+    height: 47px;
+  }
+
+  .portfolio_inner {
+    display: grid;
+    row-gap: 30px;
+    column-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .portfolio_btn {
+    display: none;
+  }
+  .mobile_btn {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #3e3a39;
+    border: 1px solid #3e3a39;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+  }
 }
