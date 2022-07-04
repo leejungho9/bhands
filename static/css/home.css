@@ -352,6 +352,7 @@ h2.work-menu.active {
     background-image: url("../images/mobile_home_image1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    border: none;
   }
   .box {
     display: none;
