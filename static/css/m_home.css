@@ -1,0 +1,125 @@
+/************** Header 반응형 *****************/
+@media all and (max-width: 767px) {
+  header {
+    width: 100%;
+  }
+  .bar {
+    height: 5px;
+  }
+  header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .logo img {
+    width: 89px;
+    height: 14px;
+  }
+  header .inner {
+    height: 56px;
+  }
+  .ham {
+    margin-right: 18px;
+  }
+  .hamBtn {
+    width: 17px;
+    height: 14px;
+  }
+}
+
+/************** home 반응형 *****************/
+@media only screen and (max-width: 767px) {
+  .mainMenu {
+    display: block;
+  }
+  .main_container {
+    margin: 0;
+  }
+  .main_content {
+    margin-top: 30px;
+  }
+
+  .backgroud_image1,
+  .backgroud_image2,
+  .backgroud_image3,
+  .backgroud_image4 {
+    width: 100%;
+    height: 400px;
+    background-image: url("../images/mobile_home_image1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+  }
+  .box {
+    display: none;
+  }
+
+  .home_btn {
+    position: static;
+    width: 120px;
+    height: 28px;
+    border-radius: 14px;
+    font-size: 12px;
+    color: #3e3a39;
+    border: 1px solid #3e3a39;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+}
+
+/************************* footer 반응형 *****************************************/
+
+@media only screen and (max-width: 767px) {
+  footer {
+    height: 190px;
+  }
+  footer .inner {
+    width: 100%;
+    padding-top: 25px;
+    padding-left: 18px;
+    padding-bottom: 22px;
+    background-color: black;
+    box-sizing: border-box;
+  }
+  footer .footerlogo {
+    width: 80px;
+    height: 13px;
+    margin-bottom: 18px;
+  }
+
+  footer p {
+    font-size: 11px;
+  }
+  footer .copyright {
+    margin-bottom: 30px;
+  }
+  footer .menu1 {
+    display: inline;
+    margin-bottom: 40px;
+  }
+
+  footer .menu1 .info2 {
+    line-height: 1;
+  }
+  footer .inner .menu2 {
+    left: 10px;
+    display: flex;
+    bottom: 20px;
+    height: 10px;
+  }
+  footer .inner .menu2 .menua {
+    font-size: 8px;
+  }
+  footer .instalogo {
+    position: absolute;
+    right: 18px;
+    bottom: 0px;
+    width: 27px;
+    height: 27px;
+    display: inline;
+  }
+}

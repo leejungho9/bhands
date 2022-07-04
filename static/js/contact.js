@@ -6,13 +6,9 @@ var mapoptions = {
 var map = new kakao.maps.Map(mapcontainer, mapoptions);
 var geocoder = new kakao.maps.services.Geocoder();
 
-// 주소로 좌표를 검색합니다.
 geocoder.addressSearch("경기도 파주시 광인사길 9-7", function (result, status) {
-  // 정상적으로 검색이 완료됐으면 실행
   if (status === kakao.maps.services.Status.OK) {
     var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
-
-    // 결과값으로 받은 위치를 마커로 표시합니다.
 
     var marker = new kakao.maps.Marker({
       map: map,
@@ -20,9 +16,6 @@ geocoder.addressSearch("경기도 파주시 광인사길 9-7", function (result,
     });
 
     console.log(coords);
-    // 커스텀 오버레이에 표시할 컨텐츠 입니다
-    // 커스텀 오버레이는 아래와 같이 사용자가 자유롭게 컨텐츠를 구성하고 이벤트를 제어할 수 있기 때문에
-    // 별도의 이벤트 메소드를 제공하지 않습니다
 
     var content = document.createElement("div");
     content.className = "wrap";
@@ -75,8 +68,6 @@ geocoder.addressSearch("경기도 파주시 광인사길 9-7", function (result,
     link.className = "link";
     body.appendChild(link);
 
-    // 마커 위에 커스텀오버레이를 표시합니다
-    // 마커를 중심으로 커스텀 오버레이를 표시하기위해 CSS를 이용해 위치를 설정했습니다
     map.setCenter(coords, marker);
 
     var overlay = new kakao.maps.CustomOverlay({
@@ -88,8 +79,6 @@ geocoder.addressSearch("경기도 파주시 광인사길 9-7", function (result,
     kakao.maps.event.addListener(marker, "click", function () {
       overlay.setMap(map);
     });
-
-    // 커스텀 오버레이를 닫기 위해 호출되는 함수입니다
   }
   map.setCenter(coords, marker);
 });

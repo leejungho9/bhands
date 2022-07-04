@@ -55,7 +55,6 @@ header a {
   background-color: #000;
 }
 header .inner {
-  /* width: 1920px; */
   width: 100%;
   height: 114px;
   margin: 0 auto;
@@ -88,14 +87,6 @@ header .logo {
 }
 
 .nav-menu {
-  /* background-color: #000;
-      height: 100vh;
-      width: 0px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 2; */
-
   display: none;
   position: fixed;
   z-index: 1000;
@@ -140,11 +131,6 @@ header .logo {
 /*sidebar - category*/
 .nav-menu.active .categoryList {
   width: 428px;
-  /*
-      margin-top: 160px;
-      position: absolute;
-      right: 0px;
-      */
   padding: 193px 67px;
   box-sizing: border-ox;
   text-align: end;
@@ -199,61 +185,28 @@ h2.work-menu.active {
   cursor: pointer;
 }
 
-/*Work 선택*/
-
 .detailMenu.active {
   color: #4c95df;
 }
 
-/************** Header 반응형 *****************/
-
-@media all and (max-width: 767px) {
-  header {
-    width: 100%;
-  }
-  .bar {
-    height: 5px;
-  }
-  header .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  header .logo img {
-    width: 89px;
-    height: 14px;
-  }
-  header .inner {
-    height: 56px;
-  }
-  .ham {
-    margin-right: 18px;
-  }
-  .hamBtn {
-    width: 17px;
-    height: 14px;
-  }
-}
-
-/*HOME*/
-
 /*MainMenu*/
 
-.btn {
+.home_btn {
+  position: absolute;
+  left: 100px;
+  bottom: 70px;
   width: 140px;
   height: 28px;
   border-radius: 14px;
   font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #3e3a39;
   border: 1px solid #3e3a39;
   cursor: pointer;
-  box-sizing: border-box;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.btn:hover {
+.home_btn:hover {
   text-decoration: none;
   color: #3e3a39;
 }
@@ -262,7 +215,7 @@ h2.work-menu.active {
   display: flex;
   justify-content: center;
 }
-.container {
+.main_container {
   position: relative;
   margin-right: 67px;
   margin-left: 67px;
@@ -271,54 +224,55 @@ h2.work-menu.active {
   box-sizing: border-box;
 }
 
-.about_menu {
-  /* width: 1150px; */
+.about_menu,
+.portfolio_menu,
+.contact_menu,
+.artist_menu {
+  position: relative;
+}
+.backgroud_image1 {
+  width: 1150px;
   height: 340px;
   border: 1px solid #b5b5b6;
   margin-bottom: 25px;
   background-image: url("../images/banner_01.jpg");
   background-size: cover;
-  position: relative;
 }
 
-.portfolio_menu {
+.backgroud_image2 {
   width: 1150px;
   height: 340px;
   border: 1px solid #b5b5b6;
   margin-bottom: 25px;
   background-image: url("../images/banner_02.jpg");
   background-size: cover;
-  position: relative;
 }
 
-.contact_menu {
+.backgroud_image3 {
   width: 1150px;
   height: 340px;
   border: 1px solid #b5b5b6;
   margin-bottom: 25px;
   background-image: url("../images/banner_03.jpg");
   background-size: cover;
-  position: relative;
 }
 
-.artist_menu {
+.backgroud_image4 {
   width: 1150px;
   height: 340px;
   border: 1px solid #b5b5b6;
   margin-bottom: 25px;
   background-image: url("../images/banner_04.jpg");
   background-size: cover;
-  position: relative;
 }
 
 .box {
   position: absolute;
   left: 100px;
-  bottom: 0;
-  margin-bottom: 70px;
+  bottom: 140px;
 }
 
-.box > h2 {
+.title {
   font-size: 40px;
   color: #3e3a39;
 }
@@ -327,9 +281,6 @@ h2.work-menu.active {
   margin-top: 15px;
   font-size: 15px;
   color: #3e3a39;
-}
-.aboutBtn {
-  margin-top: 44px;
 }
 
 /*footer*/
@@ -391,56 +342,4 @@ footer .inner .menu2 .menua::before {
   float: left;
   color: #fff;
   margin-right: 10px;
-}
-/************************* footer 반응형 *****************************************/
-
-@media only screen and (max-width: 767px) {
-  footer {
-    height: 190px;
-  }
-  footer .inner {
-    width: 100%;
-    padding-top: 25px;
-    padding-left: 18px;
-    padding-bottom: 22px;
-    background-color: black;
-    box-sizing: border-box;
-  }
-  footer .footerlogo {
-    width: 80px;
-    height: 13px;
-    margin-bottom: 18px;
-  }
-
-  footer p {
-    font-size: 11px;
-  }
-  footer .copyright {
-    margin-bottom: 30px;
-  }
-  footer .menu1 {
-    display: inline;
-    margin-bottom: 40px;
-  }
-
-  footer .menu1 .info2 {
-    line-height: 1;
-  }
-  footer .inner .menu2 {
-    left: 10px;
-    display: flex;
-    bottom: 20px;
-    height: 10px;
-  }
-  footer .inner .menu2 .menua {
-    font-size: 8px;
-  }
-  footer .instalogo {
-    position: absolute;
-    right: 50px;
-    bottom: 0px;
-    width: 27px;
-    height: 27px;
-    display: inline;
-  }
 }

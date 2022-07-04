@@ -1,85 +1,3 @@
-/*Content*/
-.btn {
-  width: 140px;
-  height: 28px;
-  border-radius: 14px;
-  font-size: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #3e3a39;
-  border: 1px solid #3e3a39;
-  cursor: pointer;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.artgoods_mainMenu {
-}
-
-.artgoods_container {
-  position: relative;
-  margin-right: 67px;
-  margin-left: 67px;
-  margin-top: 65px;
-  margin-bottom: 75px;
-  box-sizing: border-box;
-}
-
-.artgoods_box {
-  margin: 0 auto;
-  width: 1284px;
-  height: 400px;
-  padding: 60px 67px;
-  margin-bottom: 25px;
-  background-color: #f6f6f6;
-  position: relative;
-  box-sizing: border-box;
-}
-
-/* .artgoods_box {
-  position: absolute;
-  top: 75px;
-  left: 67px;
-  bottom: 0;
-  margin-bottom: 60px;
-} */
-
-.artgoods_title {
-  font-size: 35px;
-  font-weight: bold;
-  color: #3e3a39;
-}
-
-.artgoods_info {
-  margin-bottom: 45px;
-}
-
-.image_box {
-  position: absolute;
-  top: 57px;
-  right: 65px;
-  width: 580px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.shopImg {
-  width: 280px;
-  height: 280px;
-}
-
-.artgoods_subtitle {
-  width: 360px;
-  margin-top: 75px;
-  font-size: 14px;
-  color: #3e3a39;
-  line-height: 1.6;
-}
-.moreBtn {
-  margin-top: 45px;
-}
-
 /*************************artgoods 반응형**********************/
 @media only screen and (max-width: 767px) {
   .artgoods_container {
@@ -130,7 +48,7 @@
     max-width: 100%;
     height: auto;
     /* width: 360px;
-    height: 360px; */
+      height: 360px; */
     margin: auto;
   }
 
