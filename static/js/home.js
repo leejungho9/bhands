@@ -46,19 +46,19 @@ let packageEl = document.querySelector(".a_package");
 let cardEl = document.querySelector(".a_card");
 let catalogueEl = document.querySelector(".a_catalogue");
 
-if (path == "/html/artgoods.html") {
+if (path == "/artgoods.html") {
   showworkMenu();
   artgoodsEl.className = "detailMenu active";
-} else if (path == "/html/calendar.html") {
+} else if (path == "/calendar.html") {
   showworkMenu();
   calendarEl.className = "detailMenu active";
-} else if (path == "/html/diary.html") {
+} else if (path == "/diary.html") {
   showworkMenu();
   diaryEl.className = "detailMenu active";
-} else if (path == "/html/package.html") {
+} else if (path == "/package.html") {
   showworkMenu();
   packageEl.className = "detailMenu active";
-} else if (path == "/html/card.html") {
+} else if (path == "/card.html") {
   showworkMenu();
   cardEl.className = "detailMenu active";
 } else if (path == "/catalogue") {

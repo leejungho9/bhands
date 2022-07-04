@@ -25,51 +25,25 @@ if (sidebar === true) {
   setworkMenu(false);
   setworkMenu();
 }
-// let path = window.location.pathname;
-// console.log(path);
 
-// let artgoodsEl = document.querySelector(".a_artgoods");
-// let calendarEl = document.querySelector(".a_calendar");
-// let diaryEl = document.querySelector(".a_diary");
-// let packageEl = document.querySelector(".a_package");
-// let cardEl = document.querySelector(".a_card");
-// let catalogueEl = document.querySelector(".a_catalogue");
+/* slick js*/
+sliderEl = $(".slider-wrap");
 
-// if (path == "/html/artgoods.html") {
-//   workMenu = true;
-//   artgoodsEl.className = "detailMenu active";
-// } else if (path == "/calendar.html") {
-//   calendarEl.className = "detailMenu active";
-//   setworkMenu();
-// } else if (path == "/diary") {
-//   diaryEl.className = "detailMenu active";
-//   setworkMenu();
-// } else if (path == "/package") {
-//   packageEl.className = "detailMenu active";
-//   setworkMenu();
-// } else if (path == "/card") {
-//   cardEl.className = "detailMenu active";
-//   setworkMenu();
-// } else if (path == "/catalogue") {
-//   catalogueEl.className = "detailMenu active";
-//   setworkMenu();
-// }
+let slickOptions = {
+  slide: "div",
+  fade: true,
+  dots: true,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+};
 
-//기준 설정
-
-// sliderEl = document.querySelector(".slider");
-// var windowWidth = window.matchMedia("screen and (max-width: 768px)");
-// if (windowWidth.matches) {
-//   sliderEl.className = "slider-wrap";
-//   console.log("모바일 사이즈 입니다.");
-//   // window.location.reload();
-// } else {
-// $(".slider-wrap").slick("unslick");
-//   sliderEl.className = "slider";
-//   console.log("모바일 사이즈가 아닙니다.");
-//   // window.location.reload();
-// }
-
-// sliderEl = document.querySelector(".slider-wrap");
-
-// console.log(sliderEl);
+$(window).on("load resize", function () {
+  if ($(window).width() < 767) {
+    sliderEl.not(".slick-initialized").slick(slickOptions);
+  } else {
+    sliderEl.slick("unslick");
+  }
+});
