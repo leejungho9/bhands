@@ -48,7 +48,6 @@
   .portfolio_inner {
     display: grid;
     row-gap: 30px;
-    column-gap: 0;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
