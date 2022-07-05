@@ -51,5 +51,18 @@ $(function () {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    draggable: true,
+
+    responsive: [
+      {
+        breakpoint: 766, // 화면의 넓이가 600px 이상일 때
+        settings: {
+          slide: "div",
+          dots: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
 });

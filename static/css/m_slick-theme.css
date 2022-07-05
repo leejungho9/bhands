@@ -122,18 +122,17 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 0 5px;
+  margin: 0 2px;
   padding: 0;
 
   cursor: pointer;
 }
 .slick-dots li button {
-  font-size: 0;
   border-radius: 50%;
   line-height: 0;
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   padding: 5px;
   cursor: pointer;
   color: transparent;
@@ -151,13 +150,12 @@
 .slick-dots li button:before {
   border-radius: 50%;
   font-family: "slick";
-  font-size: 6px;
   line-height: 20px;
   position: absolute;
   top: 4px;
   left: 4px;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   content: "";
   text-align: center;
   opacity: 0;
