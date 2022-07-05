@@ -117,7 +117,8 @@
     left: -3.7px;
   }
   .mobile_timeline .timeline-right .timeline-date::after {
-    right: -3.5px;
+    right: -3px;
+}
   }
 
   .mobile_timeline .timeline-text {
