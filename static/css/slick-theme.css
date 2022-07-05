@@ -56,18 +56,17 @@
   cursor: pointer;
 }
 .slick-next:before {
-  cursor: pointer;
-  position: absolute;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 40px;
   line-height: 1;
   opacity: 0.75;
+  width: 21px;
+  height: 32px;
   color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  width: 21px;
-  height: 32px;
+  cursor: pointer;
 }
 
 .slick-prev {
