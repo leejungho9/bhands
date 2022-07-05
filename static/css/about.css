@@ -1,5 +1,5 @@
 /*About*/
-.about {
+.about_section {
 }
 .about_container {
   width: 100%;
@@ -42,24 +42,27 @@
   background-color: #f6f6f6;
   min-height: 600px;
   padding: 100px 0;
-  margin-bottom: 1-0px;
+  box-sizing: border-box;
 }
 .historyTitle {
-  position: relative;
   width: 100%;
   text-align: center;
+  margin-bottom: 55px;
 }
 
 .historyTitle h1 {
   font-size: 35px;
-  margin: 0px;
+}
+.mobile_historyH1 {
+  display: none;
 }
 .timeline {
   position: relative;
   width: 100%;
-  padding-top: 55px;
   margin: auto;
+  display: block;
 }
+
 .timeline p {
   color: #3e3a39;
   margin-top: 0;
@@ -150,18 +153,18 @@ p {
   margin-bottom: 1rem;
 }
 /**/
-.aboutButtom {
-  margin: 0 212px;
-  margin-top: 150px;
-  margin-bottom: 100px;
+.about_license {
+  margin: 100px 212px;
+
   text-align: center;
 }
 .logo {
   margin: auto;
   margin-bottom: 20px;
 }
-.aboutButtom p {
+.about_license p {
   margin-top: 10px;
+  margin-bottom: 25px;
   font-size: 16px;
   letter-spacing: -1.2px;
 }
@@ -174,4 +177,10 @@ p {
   width: 860px;
   height: 90px;
   margin: auto;
+}
+.mobile_title {
+  display: none;
+}
+.mobile_timeline {
+  display: none;
 }

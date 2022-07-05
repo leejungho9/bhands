@@ -17,17 +17,14 @@
     <!--jQuery cdn -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
-  
-
-    
     <!--css 연결-->
     <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/diary.css" />
+
+    <!--slick css 연결-->
     <link rel="stylesheet" href="../css/slick-theme.css" />
     <link rel="stylesheet" href="../css/slick.css" /> 
-    <link rel="stylesheet" href="../css/diary.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    
-    
+   
 
 
 
@@ -130,6 +127,8 @@
       <!--body-->
       <section class="diary_section">
         <i class="fa-solid fa-xmark sliderCloseBtn-hidden" style="font-size: 34px;" onclick="closeSlider()"></i>
+        <h2 class="mobile_title">DIARY</h2>
+       
         <!-- slider section -->
         <div class="sliderArea-hidden">
           <div class="image_container">
@@ -173,11 +172,10 @@
           </div>
           <p class="imageYear">2022</p>
           <p class="imageName">삼성화재</p>
+          <p class="mobile_image_info">
+            삼성화재 VIP , 2022
+          </p>
         </div>
-
-
-
-
 
 
 
@@ -203,7 +201,7 @@
             </div>
           </div>
   
-        <!--calendar content -->
+        <!--diary content -->
           <div class="inner">
             <div class="diary_box" onclick="showSlider()">
               <img
@@ -366,8 +364,8 @@
       </footer>
 
     
-      <script src="../js/diary.js"> </script>
       <script src="../js/home.js"> </script>
+      <script src="../js/diary.js"> </script>
       
       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>

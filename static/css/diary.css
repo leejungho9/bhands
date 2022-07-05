@@ -103,6 +103,35 @@
   display: none;
 }
 
+.sliderArea {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  height: 743px;
+  width: 5100px;
+  background-color: #f6f6f6;
+  position: relative;
+  margin-bottom: 50px;
+}
+.sliderArea-hidden {
+  height: 10px;
+  opacity: 0;
+  display: block;
+  /* transition: opacity 0.5s ease;
+    -webkit-transition: opacity 1s ease; */
+}
+.image_container {
+  margin-top: 85px;
+  margin-bottom: 155px;
+  text-align: center;
+}
+.mobile_image_info {
+  display: none;
+}
+.mobile_title {
+  display: none;
+}
+
 /*페이징처리*/
 .pageArea {
   display: flex;
