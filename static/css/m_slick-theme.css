@@ -122,8 +122,9 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 0 2px;
+  margin: 0 5px;
   padding: 0;
+
   cursor: pointer;
 }
 .slick-dots li button {
@@ -131,10 +132,9 @@
   border-radius: 50%;
   line-height: 0;
   display: block;
-  width: 11px;
-  height: 11px;
+  width: 10px;
+  height: 10px;
   padding: 5px;
-  box-sizing: border-box;
   cursor: pointer;
   color: transparent;
   outline: none;
@@ -149,15 +149,15 @@
   opacity: 0;
 }
 .slick-dots li button:before {
-  font-size: 0;
   border-radius: 50%;
   font-family: "slick";
+  font-size: 6px;
   line-height: 20px;
   position: absolute;
   top: 4px;
   left: 4px;
-  width: 6px;
-  height: 6px;
+  width: 7px;
+  height: 7px;
   content: "";
   text-align: center;
   opacity: 0;
