@@ -51,13 +51,11 @@
   height: 15px;
 }
 
-.inner {
+.package_inner {
   display: grid;
-  grid-template-rows: repeat(2);
   row-gap: 50px;
   column-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(369px, 3fr));
 }
 
 .package_box {
@@ -79,6 +77,9 @@
   color: #595757;
   font-size: 15px;
   padding: 10px;
+}
+.mobile_title {
+  display: none;
 }
 
 /*페이징처리*/
