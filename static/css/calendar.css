@@ -21,9 +21,7 @@
 .topMenu-hidden {
   display: none;
 }
-.topMenu-hidden ~ .inner {
-  margin-top: 50px;
-}
+
 .year span {
   margin-right: 20px;
   font-size: 15px;

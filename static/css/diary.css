@@ -21,9 +21,7 @@
 .topMenu-hidden {
   display: none;
 }
-.topMenu-hidden ~ .inner {
-  margin-top: 50px;
-}
+
 .year span {
   margin-right: 20px;
   font-size: 15px;
@@ -57,7 +55,7 @@
   height: 15px;
 }
 
-.inner {
+.diary_inner {
   display: grid;
   grid-template-rows: repeat(2);
   row-gap: 50px;
