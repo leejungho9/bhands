@@ -17,40 +17,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.year span {
-  margin-right: 20px;
-  font-size: 15px;
-  cursor: pointer;
-}
-.year_menu.active {
-  font-weight: bold;
-}
-.search {
-  border-radius: 15px;
-  border: 1px solid #595757;
-  width: 250px;
-  height: 30px;
-  padding: 10px;
-  box-sizing: border-box;
-  position: relative;
-}
-.search:focus {
-  outline: none;
-}
-.searchBtn {
-  top: 22px;
-  right: 10px;
-  border: none;
-  height: 20px;
-  position: absolute;
-  background-color: #fff;
-  cursor: pointer;
-}
-.searchImg {
-  height: 15px;
-}
-
 .package_inner {
   display: grid;
   row-gap: 50px;
