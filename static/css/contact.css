@@ -114,6 +114,7 @@ textarea::placeholder {
 .contentInput,
 .emailInput,
 .nameInput {
+  border-radius: 0;
   outline: none;
   border: none;
 }
