@@ -1,0 +1,64 @@
+/*Artist*/
+
+.artist_container {
+  width: 100%;
+  margin: auto;
+  margin-top: 65px;
+}
+.artist_banner {
+  background-image: url("../images/artist_image1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  margin-bottom: 45px;
+  position: relative;
+}
+.artistbhands {
+  width: 1150px;
+  position: relative;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.artistHeadcount {
+  margin-bottom: 45px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #3e3a39;
+}
+
+.artist_inner {
+  display: grid;
+  row-gap: 60px;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(369px, 3fr));
+}
+
+.artist_box {
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.artistImage {
+  width: 369px;
+  height: 369px;
+}
+.artist_info {
+  width: 369px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.artist_info span {
+  color: #595757;
+  font-size: 14px;
+  padding: 15px;
+}
+.mobile_title {
+  display: none;
+}
+.mobile_timeline {
+  display: none;
+}
