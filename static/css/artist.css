@@ -11,22 +11,31 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  margin-bottom: 45px;
+
   position: relative;
 }
-.artistbhands {
+.artist_content {
   width: 1150px;
   position: relative;
   margin: auto;
   margin-bottom: 100px;
 }
+.top_menu {
+  display: flex;
+  justify-content: space-between;
+}
 .artistHeadcount {
-  margin-bottom: 45px;
+  margin: 45px 0;
   font-size: 15px;
   font-weight: bold;
   color: #3e3a39;
 }
-
+.square {
+  background-color: #f6f6f6;
+  margin: 35px 0;
+  width: 300px;
+  height: 41px;
+}
 .artist_inner {
   display: grid;
   row-gap: 60px;
