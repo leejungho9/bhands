@@ -32,7 +32,6 @@
   row-gap: 60px;
   column-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-columns: repeat(auto-fit, minmax(369px, 3fr));
 }
 
 .artist_box {
@@ -60,5 +59,8 @@
   display: none;
 }
 .mobile_timeline {
+  display: none;
+}
+.m_artistImage {
   display: none;
 }
