@@ -41,6 +41,13 @@ function closeSlider() {
   changetopMenu();
 }
 
+$(".year_menu").each(function () {
+  $(this).click(function () {
+    $(this).addClass("active");
+    $(this).siblings().removeClass("active");
+  });
+});
+
 /* slick js*/
 $(function () {
   $(".slick-slider").slick({
