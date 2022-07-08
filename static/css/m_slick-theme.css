@@ -102,9 +102,6 @@
 }
 
 /* Dots */
-/* .slick-dotted.slick-slider {
-  margin-bottom: 30px;
-} */
 
 .slick-dots {
   position: absolute;
@@ -154,9 +151,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 7px;
-  height: 7px;
-  content: "●";
+  width: 20px;
+  height: 20px;
+  content: "•";
   text-align: center;
   opacity: 0.25;
   color: black;
