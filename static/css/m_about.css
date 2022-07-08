@@ -15,7 +15,7 @@
   }
   .aboutImg {
     background-image: url(../images/about_image1.jpg);
-    /* background-position: center center; */
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -180,6 +180,7 @@
   .licenseTitle {
     font-size: 14px;
     font-weight: bold;
+    margin-bottom: 20px;
   }
   .about_license p {
     display: none;
@@ -188,6 +189,7 @@
     content: url("../images/about_image_3.png");
     width: 270px;
     height: 250px;
+    margin: auto;
   }
   .blank {
     margin-bottom: 40px;
