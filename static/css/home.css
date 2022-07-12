@@ -1,5 +1,10 @@
 /*Common*/
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
 hr {
   margin: 0;
   color: #b5b5b6;

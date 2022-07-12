@@ -84,7 +84,7 @@
   .map_info .title {
     font-size: 13px;
   }
-  .map_info .close {
+  .map_info .map_close {
     width: 10px;
     height: 10px;
     background-size: contain;
