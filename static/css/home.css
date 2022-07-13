@@ -3,7 +3,7 @@
 html,
 body {
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: scroll;
 }
 hr {
   margin: 0;
