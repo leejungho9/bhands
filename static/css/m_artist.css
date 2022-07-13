@@ -18,7 +18,6 @@
   .top_menu {
     display: none;
   }
-
   .artist_inner {
     display: grid;
     row-gap: 30px;
