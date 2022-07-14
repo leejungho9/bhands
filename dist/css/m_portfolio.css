@@ -1,0 +1,75 @@
+/************************* portfolio 반응형 *****************************************/
+
+@media only screen and (max-width: 767px) {
+  .portfolio {
+    display: block;
+  }
+  .portfolio_container {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .mobile_title {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    padding-left: 18px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+  }
+  .text {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    left: 0;
+    text-align: center;
+  }
+  .text2 {
+    display: none;
+  }
+  .topbox {
+    width: 180px;
+    height: 47px;
+  }
+  .topbox .portfolio_title {
+    font-size: 12px;
+  }
+  .topbox .portfolio_subtitle {
+    display: none;
+  }
+  .midlebox {
+    width: 180px;
+    height: auto;
+  }
+  .bottombox {
+    width: 180px;
+    height: 47px;
+  }
+
+  .portfolio_inner {
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+
+  .portfolio_btn {
+    display: none;
+  }
+  .mobile_btn {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    font-size: 10px;
+    color: #3e3a39;
+    border: 1px solid #3e3a39;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+  }
+}

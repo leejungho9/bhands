@@ -1,7 +1,7 @@
 /* Slider */
 
 .slick-slider {
-  width: 5100px !important;
+  /* width: 5100px !important; */
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -19,7 +19,6 @@
 
 .slick-list {
   position: relative;
-  height: 743px;
   display: block;
   overflow: hidden;
   margin: 0;
@@ -93,13 +92,13 @@
 
 .imageYear {
   position: absolute;
-  left: 2010px;
-  bottom: 50px;
+  left: 150px;
+  bottom: 83px;
   font-size: 15px;
 }
 .imageName {
   position: absolute;
-  right: 2010px;
-  bottom: 50px;
+  right: 150px;
+  bottom: 83px;
   font-size: 15px;
 }

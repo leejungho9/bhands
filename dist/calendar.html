@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, width=device-width" />
+
+    <title>비핸즈</title>
 
     <!-- reset css cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
@@ -15,19 +17,22 @@
     <!--jQuery cdn -->
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
-
     <!--css 연결-->
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/calendar.css" />
     
+    <!-- mobile css 연결-->
+    <link rel="stylesheet" href="../css/m_home.css" />
+    <link rel="stylesheet" href="../css/m_calendar.css" />
     
+    <!--slick css 연결-->
     <link rel="stylesheet" href="../css/slick-theme.css" />
     <link rel="stylesheet" href="../css/slick.css" /> 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    
-    
+        
 
-    <title>비핸즈</title>
+    <!--mobile slick 연결-->
+    <link rel="stylesheet" href="../css/m_calendar_slick.css" /> 
+
 
 
   <link>
@@ -124,77 +129,150 @@
         </div>
       </div>
       <hr />
-  </header>
-
-      <!--body-->
-      <section class="calendar_section">
-        <i class="fa-solid fa-xmark sliderCloseBtn-hidden" style="font-size: 34px;" onclick="closeSlider()"></i>
+    </header>
+    
+    <!--body-->
+    <div class="background-hidden"></div>
+    <section class="calendar_section">
+      <i class="fa-solid fa-xmark sliderCloseBtn-hidden" style="font-size: 34px;" onclick="closeSlider()"></i>
+      <h2 class="mobile_title">CALENDAR</h2>
         
         <!-- slider section -->
-        <div class="sliderArea-hidden">
-          <div class="image_container">
-            <div class="slick-slider">
-              <div class="imageArea">
-                <img
-                src="../images/slider-image.jpg"
-                alt="slider-Img"
-                class="slideImg"
-              />
-              </div>
-              <div class="imageArea">
-                <img
-                src="../images/slider-image.jpg"
-                alt="slide-Img"
-                class="slideImg"
-              />
-              </div>
-              <div class="imageArea">
-                <img
-                src="../images/slider-image.jpg"
-                alt="slide-Img"
-                class="slideImg"
-              />
-              </div>
-              <div class="imageArea">
-                <img
-                src="../images/slider-image.jpg"
-                alt="slide-Img"
-                class="slideImg"
-              />
-              </div>
-              <div class="imageArea">
-                <img
-                src="../images/slider-image.jpg"
-                alt="slide-Img"
-                class="slideImg"
-              />
+
+          <div class="sliderArea1 sliderArea-hidden">
+            <div class="image_container">
+              <div class="slick-slider">
+                
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+
               </div>
             </div>
+            <p class="imageYear">2022</p>
+            <p class="imageName">삼성화재</p>
+            <p class="mobile_image_info">
+              삼성화재 VIP , 2022
+            </p>
           </div>
-          <p class="imageYear">2022</p>
-          <p class="imageName">삼성화재</p>
-        </div>
 
 
+          <div class="sliderArea2 sliderArea-hidden">
+            <div class="image_container">
+              <div class="slick-slider">
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+              </div>
+            </div>
+            <p class="imageYear">2022</p>
+            <p class="imageName">삼성화재</p>
+            <p class="mobile_image_info">
+              삼성화재 VIP , 2022
+            </p>
+          </div>
 
+          <div class="sliderArea3  sliderArea-hidden">
+            <div class="image_container">
+              <div class="slick-slider">
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+              </div>
+            </div>
+            <p class="imageYear">2022</p>
+            <p class="imageName">삼성화재</p>
+            <p class="mobile_image_info">
+              삼성화재 VIP , 2022
+            </p>
+          </div>
 
+          <div class="sliderArea4  sliderArea-hidden">
+            <div class="image_container">
+              <div class="slick-slider">
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+              </div>
+            </div>
+            <p class="imageYear">2022</p>
+            <p class="imageName">삼성화재</p>
+            <p class="mobile_image_info">
+              삼성화재 VIP , 2022
+            </p>
+          </div>
 
+          <div class="sliderArea5  sliderArea-hidden">
+            <div class="image_container">
+              <div class="slick-slider">
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+              </div>
+            </div>
+            <p class="imageYear">2022</p>
+            <p class="imageName">삼성화재</p>
+            <p class="mobile_image_info">
+              삼성화재 VIP , 2022
+            </p>
+          </div>
 
-
-
+          <div class="sliderArea6  sliderArea-hidden">
+            <div class="image_container">
+              <div class="slick-slider">
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+                <div class="imageArea">
+                  <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+                </div>
+              </div>
+            </div>
+            <p class="imageYear">2022</p>
+            <p class="imageName">삼성화재</p>
+            <p class="mobile_image_info">
+              삼성화재 VIP , 2022
+            </p>
+          </div>
+        
+        
         <!-- year -->
         <div class="calendar_container">
           <div class="topMenu">
             <div class="year">
-            <span  class= "year_menu"> ALL </span>
-            <span  class= "year_menu"> 2021 </span>
-            <span  class= "year_menu"> 2020 </span>
-            <span  class= "year_menu"> 2019 </span>
-            <span  class= "year_menu"> 2018 </span>
-            <span  class= "year_menu"> 2017 </span>
-          </div>
-
-        <!-- search -->
+              <span  class= "year_menu" > ALL </span>
+              <span  class= "year_menu" > 2021 </span>
+              <span  class= "year_menu" > 2020 </span>
+              <span  class= "year_menu" > 2019 </span>
+              <span  class= "year_menu" > 2018 </span>
+              <span  class= "year_menu" > 2017 </span>
+            </div>
+            
+            <!-- search -->
             <div class="searchArea">
               <input type="text" placeholder="Search" class="search"></input>
               <button class="searchBtn">
@@ -204,8 +282,8 @@
           </div>
   
         <!--calendar content -->
-          <div class="inner">
-            <div class="calendar_box" onclick="showSlider()">
+          <div class="calendar_inner">
+            <div class="calendar_box" onclick="showSlider(1)">
               <img
                 alt="캘린더"
                 class="calendarImage"
@@ -218,7 +296,7 @@
               </div>
             </div>
   
-            <div class="calendar_box">
+            <div class="calendar_box"  onclick="showSlider(2)">
               <img
                 alt="캘린더"
                 class="calendarImage"
@@ -230,7 +308,7 @@
               </div>
             </div>
   
-            <div class="calendar_box">
+            <div class="calendar_box"  onclick="showSlider(3)">
               <img
                 alt="캘린더"
                 class="calendarImage"
@@ -242,7 +320,7 @@
               </div>
             </div>
   
-            <div class="calendar_box">
+            <div class="calendar_box"  onclick="showSlider(4)">
               <img
                 alt="캘린더"
                 class="calendarImage"
@@ -254,7 +332,7 @@
               </div>
             </div>
   
-            <div class="calendar_box">
+            <div class="calendar_box"  onclick="showSlider(5)">
               <img
                 alt="캘린더"
                 class="calendarImage"
@@ -266,7 +344,7 @@
               </div>
             </div>
   
-            <div class="calendar_box">
+            <div class="calendar_box"  onclick="showSlider(6)">
               <img
                 alt="캘린더"
                 class="calendarImage"
@@ -358,7 +436,7 @@
             <a href="/" class="menua"> 회사소개 </a>
             <a href="/" class="menua"> 개인정보취급방침 </a>
             <a href="/" class="menua"> 제휴문의 </a>
-            <a href="/">
+            <a href="https://www.instagram.com/bhands.official/?igshid=YmMyMTA2M2Y">
               <img class="instalogo" src="../images/footer_insta.png" alt="로고" />
             </a>
           </div>
@@ -375,4 +453,3 @@
 
   </body>
 </html>
-

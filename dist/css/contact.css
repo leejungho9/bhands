@@ -1,3 +1,4 @@
+/***************************contact css************************************/
 .contact_section {
   display: flex;
   justify-content: center;
@@ -113,6 +114,7 @@ textarea::placeholder {
 .contentInput,
 .emailInput,
 .nameInput {
+  border-radius: 0;
   outline: none;
   border: none;
 }
@@ -143,81 +145,6 @@ textarea::placeholder {
 
 .mapArea {
   margin-bottom: 100px;
-}
-
-@media all and (max-width: 767px) {
-  .contact_section {
-    width: 100%;
-  }
-  .contact_inner {
-    width: 345px;
-    margin: 30px 18px 30px;
-  }
-  .contact_inner > h1 {
-    font-size: 15px;
-    font-weight: 100;
-  }
-  .title,
-  .email,
-  .name {
-    margin-bottom: 10px;
-  }
-  .titleInput,
-  .emailInput,
-  .nameInput {
-    width: 285px;
-    height: 25px;
-    padding: 5px;
-    font-size: 12px;
-  }
-  .contentInput {
-    width: 285px;
-    height: 170px;
-    margin-bottom: 10px;
-    padding: 5px;
-    font-size: 12px;
-  }
-  .titleInput::placeholder,
-  .emailInput::placeholder,
-  .nameInput::placeholder,
-  .contentInput::placeholder {
-    color: transparent;
-  }
-  .group {
-    display: block;
-  }
-
-  .contactArea {
-    margin-top: 28px;
-  }
-  .buttonArea {
-    margin: 15px 0;
-  }
-  .sendBtn {
-    width: 70px;
-    height: 26px;
-    font-size: 12px;
-  }
-
-  .titleH2,
-  .contentH2 {
-    font-size: 12px;
-    letter-spacing: 12px;
-  }
-  .contentH2 {
-    margin-top: 5px;
-  }
-  .emainH2,
-  .nameH2 {
-    font-size: 12px;
-    letter-spacing: 0px;
-  }
-  .mapArea {
-    margin: 30px 18px;
-  }
-  .Contactbar {
-    margin-bottom: 0;
-  }
 }
 
 /***************************map css************************************/
@@ -321,22 +248,3 @@ textarea::placeholder {
 .info1 .link {
   color: #5085bb;
 }
-
-/***************************map 반응형************************************/
-@media all and (max-width: 767px) {
-  .map {
-    height: 200px;
-    width: 100%;
-  }
-  .map_info .title {
-    font-size: 13px;
-  }
-  .map_info .close {
-    width: 10px;
-    height: 10px;
-
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-/***************************footer 반응형************************************/

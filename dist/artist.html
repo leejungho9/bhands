@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1, width=device-width" />
+
+    
+    <title>비핸즈</title>
+
+    <!-- reset css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"/>
+  
+    <!--fontawesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--jQuery cdn -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!--css 연결-->
+
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/artist.css" />
+
+    <!-- mobile css 연결-->
+    <link rel="stylesheet" href="../css/m_home.css" />
+    <link rel="stylesheet" href="../css/m_artist.css" />
+        
+  
+
+
+  <link>
+  </head>
+  <body>
+    <!--header-->
+    <div class="bar"></div>
+    <header>
+      <div class="inner">
+        <a href="/" class="logo">
+          <img src="./images/logo.png" alt="로고" />
+        </a>
+        <div class="ham">
+          <img
+            onclick="showSidebar()"
+            src="../images/ham.png"
+            class="hamBtn"
+            alt="햄버거버튼"
+          ></img>
+        </div>
+
+        <div class="nav-menu">
+          <div class="bg" onclick="showSidebar()"></div>
+          <div onclick="showSidebar()">
+            <img src="../images/x.png" alt="close" class="menuCloseBtn"/>
+          </div>
+          <div class="categoryList">
+            <h2>
+              <a href="/"> HOME</a>
+            </h2>
+            <h2>
+              <a href="about.html">ABOUT</a>
+            </h2>
+            <h2 class="work-menu" onclick="showworkMenu();">
+              WORKS
+            </h2>
+            <ul class="work-menu-ul">
+              <li>
+                <a
+                  href="artgoods.html"
+                  class="a_artgoods"
+                >
+                  ART GOODS
+                </a>
+              </li>
+              <li>
+                <a
+                  href="calendar.html"
+                  class="a_calendar"
+                >
+                  CALENDAR
+                </a>
+              </li>
+              <li>
+                <a
+                  href="diary.html"
+                  class="a_diary"
+                >
+                  DIARY
+                </a>
+              </li>
+              <li>
+                <a
+                  href="package.html"
+                  class="a_package"
+                >
+                  PACKAGE
+                </a>
+              </li>
+              <li>
+                <a
+                  href="card.html"
+                  class="a_card"
+                >
+                  CARD
+                </a>
+              </li>
+              <li>
+                <a
+                  href="catalogue.html"
+                  class="a_artgoods"
+                >
+                  CATALOGUE
+                </a>
+              </li>
+            </ul>
+            <h2>
+              <a href="contact.html"> CONTACT</a>
+            </h2>
+            <h2>
+              <a href="artist.html"> ARTIST</a>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </header>
+
+      <!--body-->
+    <section class="artist_section">
+        <h2 class="mobile_title">ARTIST</h2>
+        <div class="artist_container">
+            <div>
+                <div class="artist_banner"></div>
+            </div>
+        
+        <div class="artist_content">
+            <div class="top_menu">
+              <h1 class="artistHeadcount">아티스트 64</h1>
+
+              <div class="searchArtist">
+                <input type="text"  class="square"/>
+                <img src="../images/search.png" alt="검색" class="searchImg"></img>
+              </div>
+
+
+              <!-- <div class="square"></div> -->
+            </div>
+
+            <div class="artist_inner">
+
+                <div class="artist_box" >
+                    <img
+                    alt="artist_image"
+                    class="artistImage"
+                    src="../images/artist_image2.jpg"
+                    />
+                    <img alt="artist_image"
+                    class="m_artistImage"
+                    src="../images/m_artist_image2.jpg"
+                    />
+                    
+                    <div class="artist_info">
+                        <span>박서보</span>
+                        <span>Park seobo</span>
+                    </div>
+                </div>
+
+                <div class="artist_box" >
+                <img
+                alt="artist_image"
+                class="artistImage"
+                src="../images/artist_image3.jpg"
+                />
+                <img alt="artist_image"
+                class="m_artistImage"
+                src="../images/m_artist_image2.jpg"
+                />
+                
+                <div class="artist_info">
+                    <span>박서보</span>
+                    <span>Park seobo</span>
+                </div>
+                </div>
+                
+                <div class="artist_box" >
+                    <img
+                    alt="artist_image"
+                    class="artistImage"
+                    src="../images/artist_image4.jpg"
+                    />
+                    <img alt="artist_image"
+                    class="m_artistImage"
+                    src="../images/m_artist_image2.jpg"
+                    />
+                    
+                    <div class="artist_info">
+                        <span>박서보</span>
+                        <span>Park seobo</span>
+                    </div>
+                </div>
+                        
+                <div class="artist_box" >
+                    <img
+                    alt="artist_image"
+                    class="artistImage"
+                    src="../images/artist_image5.jpg"
+                    />
+                    <img alt="artist_image"
+                    class="m_artistImage"
+                    src="../images/m_artist_image2.jpg"
+                    />
+                    
+                    <div class="artist_info">
+                        <span>박서보</span>
+                        <span>Park seobo</span>
+                    </div>
+                </div>
+                        
+                <div class="artist_box" >
+                    <img
+                    alt="artist_image"
+                    class="artistImage"
+                    src="../images/artist_image2.jpg"
+                    />
+                    <img alt="artist_image"
+                    class="m_artistImage"
+                    src="../images/m_artist_image2.jpg"
+                    />
+                    
+                    <div class="artist_info">
+                        <span>박서보</span>
+                        <span>Park seobo</span>
+                    </div>
+                </div>
+                        
+                <div class="artist_box" >
+                    <img
+                    alt="artist_image"
+                    class="artistImage"
+                    src="../images/artist_image3.jpg"
+                    />
+                    <img alt="artist_image"
+                    class="m_artistImage"
+                    src="../images/m_artist_image2.jpg"
+                    />
+                    
+                    <div class="artist_info">
+                        <span>박서보</span>
+                        <span>Park seobo</span>
+                    </div>
+                </div>
+                <div class="artist_box" >
+                    <img
+                    alt="artist_image"
+                    class="artistImage"
+                    src="../images/artist_image3.jpg"
+                    />
+                    <img alt="artist_image"
+                    class="m_artistImage"
+                    src="../images/m_artist_image2.jpg"
+                    />
+                    
+                    <div class="artist_info">
+                        <span>박서보</span>
+                        <span>Park seobo</span>
+                    </div>
+                </div>
+                        
+                <div class="artist_box" >
+                    <img
+                    alt="artist_image"
+                    class="artistImage"
+                    src="../images/artist_image4.jpg"
+                    />
+                    <img alt="artist_image"
+                    class="m_artistImage"
+                    src="../images/m_artist_image2.jpg"
+                    />
+                    
+                    <div class="artist_info">
+                        <span>박서보</span>
+                        <span>Park seobo</span>
+                    </div>
+                </div>
+                        
+                <div class="artist_box">
+                    <img
+                    alt="artist_image"
+                    class="artistImage"
+                    src="../images/artist_image2.jpg"
+                    />
+                    <img alt="artist_image"
+                    class="m_artistImage"
+                    src="../images/m_artist_image2.jpg"
+                    />
+
+                    <div class="artist_info">
+                        <span>박서보</span>
+                        <span>Park seobo</span>
+                    </div>
+                </div>
+
+                <div class="artist_box">
+                    <img
+                    alt="artist_image"
+                    class="artistImage"
+                    src="../images/artist_image2.jpg"
+                    />
+                    <img alt="artist_image"
+                    class="m_artistImage"
+                    src="../images/m_artist_image2.jpg"
+                    />
+
+                    <div class="artist_info">
+                        <span>박서보</span>
+                        <span>Park seobo</span>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+      <!--footer-->
+      <footer>
+        <div class="inner">
+          <div class="menu1">
+            <div class="info1">
+              <img class="footerlogo" src="../images/footer logo.png" alt="로고" />
+              <p>©Bhands, All rights reserved. 대표자 : 박소연</p>
+            </div>
+            <div class="info2">
+              <p>Business Code : 141-81-34625</p>
+              <p>Address : 경기도 파주시 광인사길 9-7</p>
+              <p>Contact Code : 02 2279 9211(P), 02 796 7671(F)</p>
+            </div>
+          </div>
+  
+          <div class="menu2">
+            <a href="/" class="menua"> 회사소개 </a>
+            <a href="/" class="menua"> 개인정보취급방침 </a>
+            <a href="/" class="menua"> 제휴문의 </a>
+            <a href="https://www.instagram.com/bhands.official/?igshid=YmMyMTA2M2Y">
+              <img class="instalogo" src="../images/footer_insta.png" alt="로고" />
+            </a>
+          </div>
+        </div>
+      </footer>
+
+    
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+      <script src="../js/home.js"> </script>
+      <script src="../js/artist.js"> </script>
+      
+
+  </body>
+</html>

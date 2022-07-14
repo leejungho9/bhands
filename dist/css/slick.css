@@ -1,29 +1,7 @@
 /* Slider */
 
-.sliderArea {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-  height: 743px;
-  width: 5100px;
-  background-color: #f6f6f6;
-  position: relative;
-}
-.sliderArea-hidden {
-  height: 10px;
-  opacity: 0;
-  display: block;
-  /* transition: opacity 0.5s ease;
-    -webkit-transition: opacity 1s ease; */
-}
-.image_container {
-  margin-top: 85px;
-  margin-bottom: 155px;
-  text-align: center;
-}
-
 .slick-slider {
-  width: 5100px !important;
+  /* width: 5100px !important; */
   position: relative;
   display: block;
   box-sizing: border-box;
@@ -41,7 +19,6 @@
 
 .slick-list {
   position: relative;
-  height: 743px;
   display: block;
   overflow: hidden;
   margin: 0;
@@ -115,13 +92,13 @@
 
 .imageYear {
   position: absolute;
-  left: 2010px;
-  bottom: 50px;
+  left: 150px;
+  bottom: 83px;
   font-size: 15px;
 }
 .imageName {
   position: absolute;
-  right: 2010px;
-  bottom: 50px;
+  right: 150px;
+  bottom: 83px;
   font-size: 15px;
 }

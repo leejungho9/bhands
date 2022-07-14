@@ -7,38 +7,65 @@ let closeBtnEl = document.querySelector(".sliderCloseBtn-hidden");
 let topMenu = true;
 let topMenuEl = document.querySelector(".topMenu");
 
-function changeSlider() {
-  sliderMenu = !sliderMenu;
-  sliderMenu
-    ? (sliderMenuEl.className = "sliderArea")
-    : (sliderMenuEl.className = "sliderArea-hidden");
-}
+let backgroundEl = document.querySelector(".background-hidden");
 
-function changecloseBtn() {
-  closeBtn = !closeBtn;
-  closeBtn
-    ? closeBtnEl.classList.replace("sliderCloseBtn-hidden", "sliderCloseBtn")
-    : closeBtnEl.classList.replace("sliderCloseBtn", "sliderCloseBtn-hidden");
-}
-function changetopMenu() {
-  topMenu = !topMenu;
-  topMenu
-    ? (topMenuEl.className = "topMenu")
-    : (topMenuEl.className = "topMenu-hidden");
-}
-
-function showSlider() {
+function showSlider(num) {
   console.log("슬라이드 보여지기" + sliderMenu + closeBtn);
-  changeSlider();
-  changecloseBtn();
-  changetopMenu();
+  console.log(num);
+  changeSlider(num);
+}
+let selects = [];
+
+function changeSlider(num) {
+  selects.push(num);
+
+  let sliderAreaEl = document.querySelector(`.sliderArea${num}`);
+  backgroundEl.className = "background";
+  closeBtnEl.classList.replace("sliderCloseBtn-hidden", "sliderCloseBtn");
+  topMenuEl.className = "topMenu-hidden";
+
+  if (selects.length !== 1) {
+    if (selects[selects.length - 2] === selects[selects.length - 1]) {
+      /* 클릭한 캘린더 또 클릭했을 떄*/
+      console.log("마지막 배열과 앞이 같음");
+
+      sliderAreaEl.classList.add("sliderArea-hidden");
+      backgroundEl.className = "background-hidden";
+      closeBtnEl.classList.replace("sliderCloseBtn", "sliderCloseBtn-hidden");
+      topMenuEl.className = "topMenu";
+
+      selects = [];
+    } else if (selects[selects.length - 2] !== selects[selects.length - 1]) {
+      /* 클릭한 캘린더가 아닌 다른 캘린더 클릭했을 떄*/
+      console.log("다름");
+
+      lastFront = selects[selects.length - 2];
+      last = selects[selects.length - 1];
+
+      sliderAreaEl = document.querySelector(`.sliderArea${lastFront}`);
+      sliderAreaEl.classList.add("sliderArea-hidden");
+      topMenuEl.className = "topMenu-hidden";
+
+      let sliderAreaEl2 = document.querySelector(`.sliderArea${last}`);
+      sliderAreaEl2.className = `sliderArea${last}`;
+
+      closeBtnEl.classList.replace("sliderCloseBtn-hidden", "sliderCloseBtn");
+    }
+  } else {
+    sliderAreaEl.className = `sliderArea${num}`;
+  }
 }
 
 function closeSlider() {
   console.log("슬라이드 닫기");
-  changecloseBtn();
-  changeSlider();
-  changetopMenu();
+
+  let sliderAreaEl = document.querySelector(
+    `.sliderArea${selects[selects.length - 1]}`
+  );
+  sliderAreaEl.classList.add("sliderArea-hidden");
+  closeBtnEl.classList.replace("sliderCloseBtn", "sliderCloseBtn-hidden");
+  topMenuEl.className = "topMenu";
+  selects = [];
 }
 
 $(".year_menu").each(function () {

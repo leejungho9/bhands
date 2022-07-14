@@ -1,4 +1,4 @@
-/*Content*/
+/*artgoods*/
 .btn {
   width: 140px;
   height: 28px;
@@ -12,9 +12,6 @@
   cursor: pointer;
   box-sizing: border-box;
   text-align: center;
-}
-
-.artgoods_mainMenu {
 }
 
 .artgoods_container {
@@ -36,14 +33,6 @@
   position: relative;
   box-sizing: border-box;
 }
-
-/* .artgoods_box {
-  position: absolute;
-  top: 75px;
-  left: 67px;
-  bottom: 0;
-  margin-bottom: 60px;
-} */
 
 .artgoods_title {
   font-size: 35px;

@@ -90,4 +90,7 @@
   .imageName {
     display: none;
   }
+  .background {
+    display: none;
+  }
 }

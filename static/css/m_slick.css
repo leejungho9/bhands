@@ -13,8 +13,6 @@
   height: 10px;
   opacity: 0;
   display: block;
-  /* transition: opacity 0.5s ease;
-      -webkit-transition: opacity 1s ease; */
 }
 .image_container {
   margin-top: 85px;
@@ -117,6 +115,7 @@
 
   border: 1px solid transparent;
 }
+
 .slick-arrow.slick-hidden {
   display: none;
 }

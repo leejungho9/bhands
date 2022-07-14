@@ -1,18 +1,18 @@
-/************************* calendar 반응형 *****************************************/
+/************************* diart 반응형 *****************************************/
 
 @media only screen and (max-width: 767px) {
-  .calendar_section {
+  .diary_section {
     width: 100%;
     display: block;
   }
-  .calendar_container {
+  .diary_container {
     width: 100%;
     position: relative;
     margin: 0;
     box-sizing: border-box;
     margin-bottom: 30px;
   }
-  .calendar_inner {
+  .diary_inner {
     display: grid;
     row-gap: 30px;
     column-gap: 1;
@@ -39,7 +39,7 @@
   .searchArea {
     display: none;
   }
-  .calendarImage {
+  .diaryImage {
     width: 100%;
     height: auto;
   }
@@ -68,7 +68,6 @@
   .pageArea {
     display: none;
   }
-
   .sliderArea-hidden {
     height: 0px;
     opacity: 0;
@@ -88,9 +87,6 @@
   }
   .imageYear,
   .imageName {
-    display: none;
-  }
-  .background {
     display: none;
   }
 }

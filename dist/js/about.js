@@ -1,1 +1,0 @@
-sliderEl=$(".slider-wrap");let slickOptions={slide:"div",fade:!0,dots:!0,arrows:!1,infinite:!0,speed:500,slidesToShow:1,slidesToScroll:1};$(window).on("load resize",(function(){$(window).width()<767?sliderEl.not(".slick-initialized").slick(slickOptions):sliderEl.slick("unslick")}));

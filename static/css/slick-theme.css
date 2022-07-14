@@ -5,7 +5,7 @@
   line-height: 0;
 
   position: absolute;
-  top: 33%;
+  top: 50%;
 
   display: block;
 
@@ -70,7 +70,7 @@
 }
 
 .slick-prev {
-  left: 2010px;
+  left: 100px;
   z-index: 1000;
 }
 [dir="rtl"] .slick-prev {
@@ -85,7 +85,7 @@
 }
 
 .slick-next {
-  right: 2010px;
+  right: 100px;
   z-index: 999;
 }
 [dir="rtl"] .slick-next {
@@ -106,7 +106,7 @@
 
 .slick-dots {
   position: absolute;
-  bottom: 150px;
+  bottom: -80px;
   display: block;
   width: 100%;
   padding: 0;
