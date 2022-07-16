@@ -126,9 +126,4 @@
 .page-item a:active {
   color: #898989;
 }
-.fas fa-angle-double-left::before {
-  content: "\f100";
-}
-.fas fa-angle-double-left {
-  font-size: 13px;
-}
+
