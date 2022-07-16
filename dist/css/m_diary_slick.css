@@ -1,33 +1,5 @@
 /* Slider */
 @media only screen and (max-width: 767px) {
-  .sliderArea1,
-  .sliderArea2,
-  .sliderArea3,
-  .sliderArea4,
-  .sliderArea5,
-  .sliderArea6 {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-    margin-bottom: 30px !important;
-    width: 100%;
-    height: 445px;
-    background-color: #f6f6f6;
-    position: relative;
-  }
-
-  .sliderArea-hidden {
-    height: 0.4px;
-    padding: 0;
-    opacity: 0;
-    margin: 0;
-    display: block;
-    position: absolute;
-  }
-  .image_container {
-    margin: 0;
-  }
-
   .slick-slider {
     position: relative;
     display: block;
@@ -46,12 +18,12 @@
 
   .slick-list {
     position: relative;
-    height: auto !important;
     display: block;
     overflow: hidden;
     margin: 0;
     padding: 0;
   }
+
   .slick-list:focus {
     outline: none;
   }
@@ -101,7 +73,7 @@
   .slick-slide img {
     display: block;
     margin: auto;
-    height: auto !important;
+    height: auto;
     width: 100%;
   }
   .slick-slide.slick-loading img {
@@ -238,8 +210,8 @@
 
   /* Dots */
   /* .slick-dotted.slick-slider {
-  margin-bottom: 30px;
-} */
+    margin-bottom: 30px;
+  } */
 
   .slick-dots {
     display: none !important;

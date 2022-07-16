@@ -97,12 +97,14 @@
 .sliderCloseBtn-hidden {
   display: none;
 }
+
 .background {
   background-color: #f6f6f6;
   width: 100%;
   height: 730px;
   position: absolute;
 }
+
 .background-hidden {
   display: none;
 }

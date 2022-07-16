@@ -85,5 +85,14 @@ $(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
+    responsive: [
+      // 반응형 웹 구현 옵션
+      {
+        breakpoint: 767,
+        settings: {
+          dots: false,
+        },
+      },
+    ],
   });
 });
