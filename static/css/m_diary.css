@@ -56,7 +56,7 @@
   .info span {
     display: block;
     color: #595757;
-    font-size: 15px;
+    font-size: 12px;
     padding: 0;
     margin-left: 15px;
     margin-bottom: 10px;
@@ -68,10 +68,31 @@
   .pageArea {
     display: none;
   }
-  .sliderArea-hidden {
-    height: 0px;
-    opacity: 0;
+  .sliderArea1,
+  .sliderArea2,
+  .sliderArea3,
+  .sliderArea4,
+  .sliderArea5,
+  .sliderArea6 {
+    visibility: visible;
+    opacity: 1;
     display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sliderArea-hidden {
+    height: 0.4px;
+    padding: 0;
+    opacity: 0;
+    margin: 0;
+    display: block;
+    position: absolute;
+  }
+  .image_container {
+    margin: 0;
   }
   .sliderCloseBtn {
     display: none;
@@ -79,7 +100,7 @@
   .mobile_image_info {
     display: flex;
     position: absolute;
-    bottom: 20px;
+    bottom: 24px;
     right: 0;
     left: 0;
     justify-content: center;
@@ -87,6 +108,9 @@
   }
   .imageYear,
   .imageName {
+    display: none;
+  }
+  .background {
     display: none;
   }
 }
