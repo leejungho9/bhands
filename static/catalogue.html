@@ -20,10 +20,15 @@
     <link rel="stylesheet" href="../css/home.css" />
     <link rel="stylesheet" href="../css/catalogue.css" />
 
-    
     <!-- mobile css 연결-->
     <link rel="stylesheet" href="../css/m_home.css" />
     <link rel="stylesheet" href="../css/m_catalogue.css" />
+
+    <!--slick css 연결-->
+    <link rel="stylesheet" href="../css/slick.css" />
+
+    <!--mobile slick 연결-->
+    <link rel="stylesheet" href="../css/m_slick.css" />
     
   </head>
   <body>
@@ -31,174 +36,228 @@
 
     <!--header-->
     <div class="bar"></div>
-      <header>
-        <div class="inner">
-          <a href="/" class="logo">
-            <img src="../images/logo.png" alt="로고" />
-          </a>
-          <div class="ham">
-            <img
-              onclick="showSidebar()"
-              src="../images/ham.png"
-              class="hamBtn"
-              alt="햄버거버튼"
-            ></img>
-          </div>
+    <header>
+      <div class="inner">
+        <a href="/" class="logo">
+          <img src="./images/logo.png" alt="로고" />
+        </a>
+        <div class="ham">
+          <img  onclick="showSidebar()" src="../images/ham.png" class="hamBtn" alt="햄버거버튼"></img>
+        </div>
 
-          <div class="nav-menu">
-            <div class="bg" onclick="showSidebar()"></div>
-            <div onclick="showSidebar()">
-              <img src="../images/x.png" alt="close" class="menuCloseBtn"/>
-            </div>
-            <div class="categoryList">
-              <h2>
-                <a href="/"> HOME</a>
-              </h2>
-              <h2>
-                <a href="about.html">ABOUT</a>
-              </h2>
-              <h2 class="work-menu" onclick="showworkMenu();">
-                WORKS
-              </h2>
-              <ul class="work-menu-ul">
-                <li>
-                  <a
-                    href="artgoods.html"
-                    class="artgoods"
-                  >
-                    ART GOODS
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="calendar.html"
-                    class="a_calendar"
-                  >
-                    CALENDAR
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="diary.html"
-                    class="a_diary"
-                  >
-                    DIARY
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="package.html"
-                    class="a_package"
-                  >
-                    PACKAGE
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="card.html"
-                    class="a_card"
-                  >
-                    CARD
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="catalogue.html"
-                    class="catalogue"
-                  >
-                    CATALOGUE
-                  </a>
-                </li>
-              </ul>
-              <h2>
-                <a href="contact.html"> CONTACT</a>
-              </h2>
-              <h2>
-                <a href="artist.html"> ARTIST</a>
-              </h2>
+        <div class="nav-menu">
+          <div class="bg" onclick="showSidebar()"></div>
+          <div onclick="showSidebar()">
+            <img src="../images/x.png" alt="close" class="menuCloseBtn"/>
+          </div>
+          <div class="categoryList">
+            <h2>
+              <a href="/"> HOME</a>
+            </h2>
+            <h2>
+              <a href="about.html">ABOUT</a>
+            </h2>
+            <h2 class="work-menu" onclick="showworkMenu();">WORKS</h2>
+            <ul class="work-menu-ul">
+              <li>
+                <a href="artgoods.html" class="artgoods"> ART GOODS </a>
+              </li>
+              <li>
+                <a href="calendar.html" class="a_calendar"> CALENDAR </a>
+              </li>
+              <li>
+                <a href="diary.html" class="a_diary"> DIARY </a>
+              </li>
+              <li>
+                <a href="package.html" class="a_package"> PACKAGE </a>
+              </li>
+              <li>
+                <a href="card.html" class="a_card"> CARD </a>
+              </li>
+              <li>
+                <a href="catalogue.html" class="catalogue"> CATALOGUE </a>
+              </li>
+            </ul>
+            <h2>
+              <a href="contact.html"> CONTACT</a>
+            </h2>
+            <h2>
+              <a href="artist.html"> ARTIST</a>
+            </h2>
+          </div>
+        </div>
+      </div>
+      <hr />
+    </header>
+
+
+    <!--body-->
+    <div class="background-hidden"></div>
+    <section  class="catalogue_section">
+      <i class="fa-solid fa-xmark sliderCloseBtn-hidden" style="font-size: 34px" onclick="closeSlider()" ></i>
+    <h2 class="mobile_title">CATALOGUE</h2>
+
+      
+      <!-- slider section -->
+      <div class="sliderArea1 sliderArea-hidden">
+        <div class="image_container">
+          <div class="slick-slider">
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
             </div>
           </div>
         </div>
-        <hr />
-      </header>
+        <p class="imageYear">2022</p>
+        <p class="imageName">삼성화재</p>
+        <p class="mobile_image_info">삼성화재 VIP , 2022</p>
+      </div>
 
-      <!--body-->
-      <section  class="catalogue_section">
-        <h2 class="mobile_title">CATALOGUE</h2>
-        <div  class="catalogue_container">
-          <div  class="catalogue_inner">
-            <div  class="catalogue_box">
-              <img
-                alt="다이어리"
-                 class="catalogueImage"
-                src="../images/calendar_02.png"
-              />
-              <div  class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
+      <div class="sliderArea2 sliderArea-hidden">
+        <div class="image_container">
+          <div class="slick-slider">
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
             </div>
-  
-            <div  class="catalogue_box">
-              <img
-                alt="캘린더"
-                 class="catalogueImage"
-                src="../images/calendar_02.png"
-              />
-              <div  class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
             </div>
-  
-            <div  class="catalogue_box">
-              <img
-                alt="캘린더"
-                 class="catalogueImage"
-                src="../images/calendar_02.png"
-              />
-              <div  class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
             </div>
-  
-            <div  class="catalogue_box">
-              <img
-                alt="캘린더"
-                 class="catalogueImage"
-                src="../images/calendar_02.png"
-              />
-              <div  class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
             </div>
-  
-            <div  class="catalogue_box">
-              <img
-                alt="캘린더"
-                 class="catalogueImage"
-                src="../images/calendar_02.png"
-              />
-              <div  class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
-            </div>
-  
-            <div  class="catalogue_box">
-              <img
-                alt="캘린더"
-                 class="catalogueImage"
-                src="../images/calendar_02.png"
-              />
-              <div  class="info">
-                <span>2022</span>
-                <span>삼성생명 VIP</span>
-              </div>
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
             </div>
           </div>
+        </div>
+        <p class="imageYear">2022</p>
+        <p class="imageName">삼성화재</p>
+        <p class="mobile_image_info">삼성화재 VIP , 2022</p>
+      </div>
+
+      <div class="sliderArea3 sliderArea-hidden">
+        <div class="image_container">
+          <div class="slick-slider">
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+            </div>
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+            </div>
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+            </div>
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+            </div>
+          </div>
+        </div>
+        <p class="imageYear">2022</p>
+        <p class="imageName">삼성화재</p>
+        <p class="mobile_image_info">삼성화재 VIP , 2022</p>
+      </div>
+
+      <div class="sliderArea4 sliderArea-hidden">
+        <div class="image_container">
+          <div class="slick-slider">
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+            </div>
+          </div>
+        </div>
+        <p class="imageYear">2022</p>
+        <p class="imageName">삼성화재</p>
+        <p class="mobile_image_info">삼성화재 VIP , 2022</p>
+      </div>
+
+      <div class="sliderArea5 sliderArea-hidden">
+        <div class="image_container">
+          <div class="slick-slider">
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+            </div>
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+            </div>
+          </div>
+        </div>
+        <p class="imageYear">2022</p>
+        <p class="imageName">삼성화재</p>
+        <p class="mobile_image_info">삼성화재 VIP , 2022</p>
+      </div>
+
+      <div class="sliderArea6 sliderArea-hidden">
+        <div class="image_container">
+          <div class="slick-slider">
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+            </div>
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+            </div>
+            <div class="imageArea">
+              <img src="../images/slider-image.jpg" alt="slider-Img" class="slideImg"/>
+            </div>
+          </div>
+        </div>
+        <p class="imageYear">2022</p>
+        <p class="imageName">삼성화재</p>
+        <p class="mobile_image_info">삼성화재 VIP , 2022</p>
+      </div>
+
+
+      <div  class="catalogue_container">
+        <div  class="catalogue_inner">
+          <div  class="catalogue_box"  onclick="showSlider(1)">
+            <img alt="카탈로그" class="catalogueImage" src="../images/calendar_02.png"/>
+            <div  class="info">
+              <span>2022</span>
+              <span>삼성생명 VIP</span>
+            </div>
+          </div>
+
+          <div  class="catalogue_box" onclick="showSlider(2)">
+            <img alt="카탈로그" class="catalogueImage" src="../images/calendar_02.png"/>
+            <div  class="info">
+              <span>2022</span>
+              <span>삼성생명 VIP</span>
+            </div>
+          </div>
+
+          <div  class="catalogue_box" onclick="showSlider(3)">
+            <img alt="카탈로그" class="catalogueImage" src="../images/calendar_02.png"/>
+            <div  class="info">
+              <span>2022</span>
+              <span>삼성생명 VIP</span>
+            </div>
+          </div>
+
+          <div  class="catalogue_box" onclick="showSlider(4)">
+            <img alt="카탈로그" class="catalogueImage" src="../images/calendar_02.png"/>
+            <div  class="info">
+              <span>2022</span>
+              <span>삼성생명 VIP</span>
+            </div>
+          </div>
+
+          <div  class="catalogue_box" onclick="showSlider(5)">
+            <img alt="카탈로그" class="catalogueImage" src="../images/calendar_02.png"/>
+            <div  class="info">
+              <span>2022</span>
+              <span>삼성생명 VIP</span>
+            </div>
+          </div>
+
+          <div  class="catalogue_box" onclick="showSlider(6)">
+            <img alt="카탈로그" class="catalogueImage" src="../images/calendar_02.png"/>
+            <div  class="info">
+              <span>2022</span>
+              <span>삼성생명 VIP</span>
+            </div>
+          </div>
+        </div>
 
 
           <!--pagination-->
@@ -284,10 +343,9 @@
       </footer>
 
     
-      <script src="../js/catalogue.js"> </script>
       <script src="../js/home.js"> </script>
-      
-      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+      <script src="../js/catalogue.js"> </script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
 
