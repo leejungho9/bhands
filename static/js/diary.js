@@ -62,6 +62,7 @@ function closeSlider() {
     `.sliderArea${selects[selects.length - 1]}`
   );
   sliderAreaEl.classList.add("sliderArea-hidden");
+  backgroundEl.className = "background-hidden";
   closeBtnEl.classList.replace("sliderCloseBtn", "sliderCloseBtn-hidden");
   topMenuEl.className = "topMenu";
   selects = [];

@@ -10,10 +10,11 @@
     box-sizing: border-box;
     margin-bottom: 30px;
   }
+
   .package_inner {
     display: grid;
     row-gap: 30px;
-    column-gap: 1;
+    column-gap: 15px;
     grid-template-columns: repeat(2, 1fr);
   }
   .mobile_title {
@@ -44,7 +45,55 @@
     margin-left: 15px;
     margin-bottom: 10px;
   }
+
   .pageArea {
+    display: none;
+  }
+
+  .sliderArea1,
+  .sliderArea2,
+  .sliderArea3,
+  .sliderArea4,
+  .sliderArea5,
+  .sliderArea6 {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    margin-bottom: 30px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sliderArea-hidden {
+    height: 0.1px;
+    padding: 0;
+    opacity: 0;
+    margin: 0;
+    display: block;
+    position: absolute;
+  }
+  .image_container {
+    margin: 0;
+  }
+
+  .sliderCloseBtn {
+    display: none;
+  }
+  .mobile_image_info {
+    display: flex;
+    position: absolute;
+    bottom: 24px;
+    right: 0;
+    left: 0;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .imageYear,
+  .imageName {
+    display: none;
+  }
+  .background {
     display: none;
   }
 }

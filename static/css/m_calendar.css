@@ -61,10 +61,7 @@
     margin-left: 15px;
     margin-bottom: 10px;
   }
-  .image_container {
-    margin-top: 0px;
-    text-align: center;
-  }
+
   .pageArea {
     display: none;
   }
@@ -84,7 +81,7 @@
   }
 
   .sliderArea-hidden {
-    height: 0.4px;
+    height: 0.1px;
     padding: 0;
     opacity: 0;
     margin: 0;
